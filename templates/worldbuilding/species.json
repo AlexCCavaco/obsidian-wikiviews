@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Species Name",
 	"type": "species",
+	"tags": [ "kind" ],
 	"categories": {},
 	"data": {
 		"Official Name": {

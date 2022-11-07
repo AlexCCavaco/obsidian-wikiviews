@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Item Name",
 	"type": "item",
+	"tags": [ "thing" ],
 	"categories": {
 		"weapon": [ "Weapon","Weapons" ],
 		"armour": [ "Armour","Armours" ],

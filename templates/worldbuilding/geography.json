@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Geographic Location Name",
 	"type": "geography",
+	"tags": [ "location" ],
 	"categories": {
 		"archipelago": [ "Archipelago","Archipelagos" ],
 		"asteroid": [ "Asteroid","Asteroids" ],

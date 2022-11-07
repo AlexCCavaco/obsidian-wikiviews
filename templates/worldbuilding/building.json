@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Building Name",
 	"type": "building",
+	"tags": [ "location","populated" ],
 	"categories": {
 		"abbey": [ "Abbey","Abbeys" ],
 		"citadel": [ "Citadel","Citadels" ],

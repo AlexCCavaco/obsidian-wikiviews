@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Settlement Name",
 	"type": "settlement",
+	"tags": [ "location","populated" ],
 	"categories": {
 		"camp": [ "Camp","Camps" ],
 		"slum": [ "Slum","Slums" ],

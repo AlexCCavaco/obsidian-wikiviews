@@ -1,9 +1,12 @@
 import { stringifyYaml,parseYaml } from "obsidian";
+import { stripIndents } from 'common-tags';
 
 export function CreateBody(data,opts={},header=1){
 	let res = "";
 	let keys = Object.keys(data);
+	if(data._main&&data._main.prompt) res+= '<!-- [prompt] '+data._main.prompt+' -->\n';
 	for(let key of keys){
+		if(key==='_main') continue;
 		let keyedData = data[key];
 		let label = keyedData.label??key;
 		let code = keyedData.code??label.toLowerCase().replace(' ','-');
@@ -37,6 +40,7 @@ export function ConvertSidebarEditor(callout,templateInfo,opts={}){
 	callout.appendChild(tbl);
 	tbl.classList.add('wv-table');
 	let keys = Object.keys(templateData);
+	let linkData = {};//TODO
 	for(let key of keys){
 		let keyData = templateData[key];
 		let keyInfo = templateInfo[key];
@@ -115,45 +119,94 @@ function handleDataVal(name,data,opts={}){
 	return tblQ;
 }
 
-let wvMetadataFields = [ 'wv-type','wv-category','wv-links' ];
-export function SetupMetaData(app){
-	let file = app.workspace.getActiveFile();
-	if(!file) return;
-	let metaData = app.metadata.getFileCache(file);
+export async function GetMetaData(app,file=null){
+	if(!file) file = app.workspace.getActiveFile();
+	if(!file||!app.metadataCache) return;
+	let metaData = app.metadataCache.getFileCache(file);
 	if(!metaData||!metaData.frontmatter) return;
 	const {
-		"wv-type": type,
-		"wv-category": category,
-		"wv-links": links
+		wv_type: type,
+		wv_category: category,
+		wv_tags: tags,
+		wv_data: data
 	} = metaData.frontmatter;
+	return { type,category,tags,data };
 }
-export async function AddMetaData(app){
-	let file = app.workspace.getActiveFile();
-	if(!file) return;
-	const { frontmatter: { position, ...fields }} = this.metadata.getFileCache(file);
-	const frontKeys = Object.keys(fields ?? {});
-	if (!fields || !wvMetadataFields.some(f=>frontKeys.includes(f))) { return }
+export async function SetupMetaData(app,file,addMeta={}){
+	if(!file) file = app.workspace.getActiveFile();
+	if(!file||!app.metadataCache) return;
+	let metaData = await GetMetaData(app);
+	let insertMeta = {};
+	if(!metaData) return await AddMetaData(app,file,addMeta);
+	if((!metaData.type && addMeta.type) || metaData.type!==(addMeta.type??'')) insertMeta.type = addMeta.type;
+	if((!metaData.category && addMeta.category) || metaData.category!==(addMeta.category??'')) insertMeta.category = addMeta.category;
+	if((!metaData.tags && addMeta.tags) || metaData.tags.length!==(addMeta.tags??[]).length || !addMeta.every(el=>metaData.tags.includes(el))) insertMeta.tags = addMeta.tags;
+	if((!metaData.data && addMeta.data) || JSON.stringify(metaData.data) === JSON.stringify(addMeta.data??{})) insertMeta.data = addMeta.data;
+	if(Object.keys(insertMeta).length>0) await AddMetaData(app,file,insertMeta);
+}
+export async function AddMetaData(app,file=null,addMeta={}){
+	if(!file) file = app.workspace.getActiveFile();
+	if(!file||!app.metadataCache) return;
 	/*/*/
-	const content = await app.vault.read(file);
-	const lines = content.split('\n');
-	const { line: start } = position.start;
-	let { line: end } = position.end;
-	/*/*/
-	if (frontKeys.every(f => wvMetadataFields.includes(f))) {
-		lines.splice(start, end - start + 1);
-	} else {
-		// Iterate through each YAML field-line `and remove the desired ones
-		for (let i = start + 1; i < end && wvMetadataFields.length; i++) {
-			const [key] = lines[i].split(': ');
-			const fieldIndex = wvMetadataFields.indexOf(key);
-			if (fieldIndex === -1) { continue }
+	const { type,category,tags,data } = addMeta;
+	const trueFields = {
+		...(type !== undefined && { wv_type: type }),
+		...(category !== undefined && { wv_category: category }),
+		...(tags !== undefined && { wv_tags: tags }),
+		...(data !== undefined && { wv_data: data })
+	};
 
-			lines.splice(i, 1);
-			wvMetadataFields.splice(fieldIndex, 1);
-			i--;
-			end--;
+	const fieldsArr = Object.keys(trueFields);
+	let content = await app.vault.read(file);
+	let lines = content.split('\n');
+	let yamlStartLine = lines.indexOf('---');
+	let hasYaml = yamlStartLine !== -1 && lines.slice(0, yamlStartLine).every(l=>!l);
+	let changed = false;
+	if (hasYaml){
+		// Search through the frontmatter to update target fields if they exist
+		let i;
+		for (i=yamlStartLine+1; i<lines.length && fieldsArr.length; i++) {
+			if (lines[i].startsWith('---')) { break }
+
+			const [key, val] = lines[i].split(': ');
+			const targetIndex = fieldsArr.indexOf(key);
+			if (targetIndex === -1) { continue }
+
+			const newVal = trueFields[key];
+			if (val !== newVal) {
+				lines[i] = `${key}: ${newVal}`;
+				changed = true;
+			}
+			// lines[i] = `${key}: ${trueFields[key]}`;
+			fieldsArr.splice(targetIndex, 1);
 		}
-		const newContent = lines.join('\n');
-		await this.vault.modify(file, newContent);
+		// Create new fields with their value if it didn't exist before
+		if (fieldsArr.length) {
+			lines.splice(i, 0, ...formatYamlFields(fieldsArr, trueFields));
+			i += fieldsArr.length;
+			changed = true;
+		}
+		// Add YAML ending separator if needed
+		const end = lines.indexOf('---', i);
+		if (end === -1) {
+			lines.splice(i, 0, '---');
+			changed = true;
+		}
+	} else {
+		lines.unshift(stripIndents`
+		---
+		${formatYamlFields(fieldsArr, trueFields).join('\n')}
+		---
+	  `);
+		changed = true;
 	}
+	// Skip write if no change was made
+	if (!changed) { return }
+	const newContent = lines.join('\n');
+	await app.vault.modify(file, newContent);
+}
+function formatYamlFields(fields, data){
+	return fields.map((key) => [key, `${data[key]}`])
+		.sort((a, b) => a[0].localeCompare(b[0]))
+		.map(([key, val]) => `${key}: ${val}`);
 }

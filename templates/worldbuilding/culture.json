@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Culture Name",
 	"type": "culture",
+	"tags": [ "kind","structure" ],
 	"categories": {},
 	"data": {
 		"Official Name": {

@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Religion Name",
 	"type": "religion",
+	"tags": [ "structure" ],
 	"categories": {
 		"cult": [ "Cult","Cults" ],
 		"coven": [ "Coven","Covens" ],

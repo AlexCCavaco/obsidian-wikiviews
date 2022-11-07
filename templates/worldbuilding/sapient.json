@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Sapient Species Name",
 	"type": "sapient-species",
+	"tags": [ "kind" ],
 	"categories": {},
 	"data": {
 		"Native Name": {

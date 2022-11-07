@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Organization Name",
 	"type": "organization",
+	"tags": [ "structure" ],
 	"categories": {
 		"association": [ "Association","Associations" ],
 		"order": [ "Order","Orders" ],

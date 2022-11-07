@@ -14,7 +14,10 @@ const DEFAULT_SETTINGS: PluginSettings = {
 
 export default class WikiViews extends Plugin {
 	settings: PluginSettings;
-	templates: Map<string,{data:object,body:object,images:object,options:{defaultTitle:string,showLinks:boolean,navBoxes:Array<object>,categories:{[key in string]:string|Array<string>}}}>;
+	templates: Map<string,{
+		data:object, body:object, tags:Array<string>, defaultTitle:string, showLinks:boolean,
+		categories:{ [key in string]:any }
+	}>;
 
 	async onload() {
 		await this.loadSettings();
@@ -41,17 +44,18 @@ export default class WikiViews extends Plugin {
 			name: "Insert Template",
 			editorCallback: (editor: Editor) => {
 
-				const onSubmit = ( templatePathOrKey: string, category: string|null=null) => {
+				const onSubmit = async ( templatePathOrKey: string, category: string|null=null, tags: [string]) => {
 					let template = this.getTemplate(templatePathOrKey);
 					if(!template) return console.error('Template Not Found => '+templatePathOrKey);
+					let file = app.workspace.getActiveFile();
+					if(!file||!app.metadataCache) return;
+					await SetupMetaData(this.app,file,{ type:templatePathOrKey,category:(category??null),tags:(tags??[]) });
 					let iData = "";
-					iData+= "<div class='wv-title'>"+(template.options.defaultTitle??"Title")+"</div>";
-					iData+= '\n\n';
-					iData+= CreateSidebar(templatePathOrKey,template.data??{},template.options??{});
-					iData+= '\n';
-					iData+= CreateBody(template.body??{},template.options??{});
-					editor.setCursor(-1);
-					editor.replaceSelection(iData);
+					iData+= "<div class='wv-title'>"+(template.defaultTitle??"Title")+"</div>" + '\n\n';
+					iData+= CreateSidebar(templatePathOrKey,template.data??{},template??{}) + '\n';
+					iData+= CreateBody(template.body??{},template??{});
+					let content = await this.app.vault.read(file);
+					await this.app.vault.modify(file, content+'\n'+iData);
 				};
 
 				new InsertTemplate(this.app, this, this.templates, this.settings.templatePath, onSubmit).open();
@@ -62,7 +66,7 @@ export default class WikiViews extends Plugin {
 		this.addSettingTab(new SettingsTab(this.app, this));
 
 		this.registerMarkdownPostProcessor((element,context)=>{
-			SetupMetaData(this.app);
+			//SetupMetaData(this.app);
 			let callout = element.querySelector("[data-callout='wv-sidebar']");
 			if(!callout||callout.classList.contains('wv-sidebar')) return;
 			callout.classList.add('wv-sidebar');
@@ -70,7 +74,7 @@ export default class WikiViews extends Plugin {
 			if(!templateName||!templateName.textContent) return;
 			let template = this.getTemplate(templateName.textContent);
 			if(!template) return console.error('Template Not Found => '+templateName.textContent);
-			ConvertSidebarEditor(callout,template.data,template.options);
+			ConvertSidebarEditor(callout,template.data,template);
 		});
 	}
 

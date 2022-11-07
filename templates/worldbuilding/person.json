@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Person Name",
 	"type": "person",
+	"tags": [ "individual" ],
 	"categories": {},
 	"data": {
 		"Full Name": {

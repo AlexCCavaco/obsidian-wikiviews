@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Nation Name",
 	"type": "nation",
+	"tags": [ "location","populated" ],
 	"categories": {
 		"city-state": [ "City-State","City-States" ],
 		"country": [ "Country","Countries" ],

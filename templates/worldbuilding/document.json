@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Document Name",
 	"type": "document",
+	"tags": [ "thing" ],
 	"categories": {
 		"invitation": [ "Invitation","Invitations" ],
 		"certificate": [ "Certificate","Certificates" ],

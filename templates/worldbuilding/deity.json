@@ -2,6 +2,7 @@
 	"links": true,
 	"title": "Deity Name",
 	"type": "deity",
+	"tags": [ "individual" ],
 	"categories": {},
 	"data": {
 		"Full Name": {
