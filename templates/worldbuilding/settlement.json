@@ -1,0 +1,228 @@
+{
+	"links": true,
+	"title": "Settlement Name",
+	"type": "settlement",
+	"categories": {
+		"camp": [ "Camp","Camps" ],
+		"slum": [ "Slum","Slums" ],
+		"hamlet": [ "Hamlet","Hamlets" ],
+		"village": [ "Village","Villages" ],
+		"town": [ "Town","Towns" ],
+		"outpost": [ "Outpost","Outposts" ],
+		"neighborhood": [ "Neighborhood","Neighborhoods" ],
+		"ward": [ "Ward","Wards" ],
+		"city": [ "City","Cities" ],
+		"metropolis": [ "Metropolis","Metropolises" ],
+		"capital": [ "Capital","Capitals" ],
+		"citadel": [ "Citadel","Citadels" ],
+		"state": [ "State","States" ],
+		"territory": [ "Territory","Territories" ],
+		"microstate": [ "Microstate","Microstates" ]
+	},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Motto": {
+			"label": "",
+			"preText": "<b>Motto: </b>",
+			"wide": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Region": {},
+		"Country": {},
+		"Demonyms": {},
+		"Founded": {},
+		"Founded Event": {},
+		"Established": {},
+		"Established Event": {},
+		"Independence": {},
+		"Preceded By": {},
+		"Era": {},
+		"Dissolution": {},
+		"Dissolution Event": {},
+		"Succeeded By": {},
+		"Ruled By": { "tag": "ruled_by" },
+		"Government": {},
+		"Power System": {},
+		"Parent Organization": { "tag": "parent_org" },
+		"Alliances": {},
+		"Unions": {},
+		"Member Of": { "tag": "member_of" },
+		"Allied With": {},
+		"Enemies Of": {},
+		"In War With": {},
+		"Notable Dates": {},
+		"Official Languages": {},
+		"National Languages": {},
+		"Regional Languages": {},
+		"Writing Systems": {},
+		"Ethnic Groups": {},
+		"Official Religions": {},
+		"Religions": {},
+		"National Symbols": {},
+		"Population": { "tag": "population" },
+		"Currency": {},
+		"Timezone": {},
+		"Area": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Settlement general description with details on location and divisions. With other prominent/notable general details?"
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"Geography": {
+			"prompt": "What is the overall geography? Any notable locations?",
+			"list": {
+				"Climate": {
+					"prompt": "What does the climate look like? Rain/Temperature/Snow/Tides/Wind/Radiation/... Is it changing? Are there recurrent climate events (tornadoes,volcanoes,floods,...)? Are there different climate regions?"
+				},
+				"Biodiversity": {
+					"prompt": "How diversity is the fauna and flora? Are they under treat? Were any drove to extinction? Relation with agriculture/industry/infrastructure? Are habitats preserved? Is there education? Is there zoos/botanical parks/forests/sanctuaries/national parks/...?"
+				},
+				"Topography": {
+					"prompt": "Terrain/Mountains/Ranges/Deserts/Seismic/Volcanoes/..."
+				},
+				"Hydrography": {
+					"prompt": "Rivers/Lakes/Oceans/Seas/Islands/..."
+				},
+				"Natural Resources": {
+					"prompt": "What resources are present within? Is there scarcity or surplus?"
+				}
+			}
+		},
+		"History": {
+			"prompt": "What are some notable historical events? Conquering/Formation/Indigenous people/Expansion/Conquest/Conflicts/Coups/..."
+		},
+		"Governance": {
+			"prompt": "How large is the government? How influential is it? How is it viewed by the populace? How is it viewed by nobility/oligarchs/...?",
+			"list": {
+				"Local Government and Administration": {
+					"prompt": "How is the local government structured? How do elections work?"
+				},
+				"Administrative Divisions": {
+					"prompt": "How is the settlement divided? Are there districts, or municipalities, or neighborhoods?"
+				},
+				"Law Enforcement": {
+					"prompt": "Who polices the streets? How large of a workforce? Are they corrupt?"
+				},
+				"Military Presence": {
+					"prompt": "Is the military present within the settlement? For what purpose and how large of a part of it?"
+				}
+			}
+		},
+		"Cityscape": {
+			"prompt": "==?",
+			"list": {
+				"Architecture": {
+					"prompt": "Prevalent Architecture and architecture features?"
+				},
+				"Parks and Forests": {
+					"prompt": "Amount of Green Space. Extend of forest area. Fauna and Flora present."
+				}
+			}
+		},
+		"Economy": {
+			"prompt": "Is the economy developed? Is it a relevant/prominent topic? What sectors are most relevant? How has it developed historically? Any event of relevance (like an industrial revolution or innovation or discovery)?",
+			"list": {
+				"Taxation": {
+					"prompt": "Is there taxation? How does it work? How is it received?"
+				},
+				"Currency": {
+					"prompt": "Is there a local currency? Is it physical? What do the coins look like? Are there notes? What is it made of? Is it based on another currency? Is it standardized?"
+				},
+				"Trade and Transport": {
+					"prompt": "How does trade work? Is it a barter system? Is there international trade? How does transportation of goods work? By what means does it work? Are there trade organizations and/or regulations? Is there a class that dedicates itself to trade?"
+				},
+				"Tourism": {
+					"prompt": "Is there tourism? How prolific is it? What areas/locations are often visited? Is there religious/educational/eco/scientific/creative/seasonal tourism? Is tourism domestic or more widespread?"
+				},
+				"Science and Technology": {
+					"prompt": "Are there prominent science and/or technological fields? How is science conducted and by who? Are there policies/grants/investment/research related to science and technology? How does tech influence daily affairs? Is there any famous innovations or innovators?"
+				},
+				"Agriculture and Industry": {
+					"prompt": "Is there a prominent agriculture field? What is cultivated? What livestock is used and for what? Is rotation/pesticides/genetic modification/selective breeding/... used? Is there water issues? Is there an active industrial sector? What is produced? Who is the workforce? Are there safety/monetary/environment/investment problems?"
+				},
+				"Imports and Exports": {
+					"prompt": "What goods are exchanged? Is there any well known regional/national products? Are there restrictions? Are there tariffs/licenses/quotas/barriers? Are there controlling organizations/bodies? Is there smuggling ans is it a problem? What policies are relevant?"
+				}
+			}
+		},
+		"Society": {
+			"prompt": "How relevant is Society and unity? Are social rules strictly defined or generally accepted?",
+			"list": {
+				"Demographics": {
+					"prompt": "Is there a population boom? Is there an age problem (too many young or too many old or a tendency towards either? How is gender structured? Is there a disproportionate distribution?"
+				},
+				"Family": {
+					"prompt": "What part does family play in society? Is there a relation to power based on family? Is marriage expected? Is interracial relations/intimacy frowned upon? How does family tie in with parenthood? How is parenthood/household/family responsibilities divided? Is divorce allowed or badly viewed? Who raises children?"
+				},
+				"Education": {
+					"prompt": "What is the state of the education? Are people literate? Are people educated? Is there a social gap? Is there higher education?"
+				},
+				"Health": {
+					"prompt": "What is the state of the health and healthcare? Are people healthy? Is there a social gap?"
+				},
+				"Religion": {
+					"prompt": "What religions are practiced? Are there official religions? Are there oppressed religions?"
+				},
+				"Migration": {
+					"prompt": "Is there an influx of people going in and/or out? Are there migration problems? Are people leaving? "
+				},
+				"Minority Groups": {
+					"prompt": "Are there minority groups? Do they have representation? Are they oppressed? How are they viewed?"
+				},
+				"Languages": {
+					"prompt": "What languages are spoken? Are there official languages? Are there minority languages?"
+				},
+				"Punishment": {
+					"prompt": "Is punishment always lawful? Is there public punishment? Are matters treat in family or in group?"
+				}
+			}
+		},
+		"Art and Culture": {
+			"prompt": "Cultural Influences, Cultural Divides, Historical Relation and Cultural Outline",
+			"list": {
+				"Arts and Literature": {
+					"prompt": "How is art reflected in society? Are there patrons? Are there any movements? Relevance in education? Skill and craft? What are its influences? Is art accompanied in other facets of society?"
+				},
+				"Philosophy": {
+					"prompt": "Importance of philosophy? Is it practiced? Are there specific philosopher or those that practice have other occupations? Are there patrons? Which philosophical types are embraced? Underground movements?"
+				},
+				"Music and Dance": {
+					"prompt": "Influences? Common instruments, genres and dance styles? Any regional/national symbols? Roles of pitch/melody/harmony/rhythm/texture/timbre/expression/form? In Education? Reflection of society (like music created from dark times or from a happy outlook)?"
+				},
+				"Architecture": {
+					"prompt": "What does the tradition architecture look like? Is it widespread or with regional differences? What are its influences? Historical? Neighbors? Does architecture extend to public facilities/parks/landscape/interior/disaster prevention/water integration?"
+				},
+				"Ethics": {
+					"prompt": "Is there a prevailing concept of right and wrong behaviour? Are there ethics in medicine/war/politics/animal/tech/science/business?"
+				},
+				"Food and Cuisine": {
+					"prompt": "What are some typical foods? What are some common ingredients? Is food shaped by culture/history/neighbors? Is it shaped by current or historical wars/famines/poverty? Condiments/Spice/Meals/Meal Structure/Drinks/Alcohol/Narcotics/Sweets/Salt/Nutrition/Obesity?"
+				},
+				"Media": {
+					"prompt": "Is media access widespread? In what forms? Do people hear of nacional news? And world news? Is media controlled/censored/altered/propagandized/blocked? What is the level of trust in media?"
+				},
+				"Sports": {
+					"prompt": "What sports are practiced? How widespread are these? Any interconnection with other places? Are these socially divided? Does everyone play? Do children have rough versions of these (like cloth balls)?"
+				},
+				"Holidays and Festivals": {
+					"prompt": "Often celebrated holidays and festival? Cultural importance of these? Seasonal? Religious? Historical? Reenactments? Arts?"
+				}
+			}
+		}
+	}
+}

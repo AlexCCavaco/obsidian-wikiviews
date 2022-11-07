@@ -1,0 +1,337 @@
+{
+	"links": true,
+	"title": "Culture Name",
+	"type": "culture",
+	"categories": {},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Motto": {
+			"label": "",
+			"preText": "<b>Motto: </b>",
+			"wide": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Capital and Largest City": {
+			"label": "<span>Capital</span><span class='wv-small'> (and Largest City)</span>"
+		},
+		"Capital": {},
+		"Largest city": {},
+		"Region": {},
+		"Demonyms": {},
+		"Established": {},
+		"Established Event": {},
+		"Independence": {},
+		"Preceded By": {},
+		"Era": {},
+		"Dissolution": {},
+		"Dissolution Event": {},
+		"Succeeded By": {},
+		"Ruled By": { "tag": "ruled_by" },
+		"Head of State": {},
+		"Head of Government": {},
+		"Government Type": {},
+		"Government": {},
+		"Power System": {},
+		"Parent Organization": { "tag": "parent_org" },
+		"Alliances": {},
+		"Unions": {},
+		"Member Of": { "tag": "member_of" },
+		"Allied With": {},
+		"Enemies Of": {},
+		"In War With": {},
+		"Notable Dates": {},
+		"Official Languages": {},
+		"Regional Languages": {},
+		"Writing Systems": {},
+		"Ethnic Groups": {},
+		"Official Religions": {},
+		"Religions": {},
+		"Cultural Symbols": {},
+		"Population": { "tag": "population" },
+		"Currency": {},
+		"Timezone": {},
+		"Area": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Culture Overall Description."
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"History": {
+			"prompt": "What is the history of the culture?",
+			"list": {
+				"Evolution": {
+					"prompt": "How old is your culture?\nDo they have common ancestors? If so, are they extinct? Are they equal in development? \nWhere on the planet did your culture originate?\nWas there any outside influence to their evolution?\nWere they divinely created?"
+				},
+				"War and Conflict": {
+					"prompt": "Have there been any wars?\nWhat have been the common attributes to the starting of wars?\nHave other Cultures/Nations been destroyed or subjugated?"
+				},
+				"Migration": {
+					"prompt": "Does your culture migrate across the planet? If so, what determines this migration? Is migration Seasonal, Cultural, Spiritual?\nAre they Sedentary (Stay in one place)?"
+				},
+				"Disasters": {
+					"prompt": "What disasters has your culture experienced?\nWere there any extinction level events?\nWas there an Apocalypse?"
+				},
+				"Stories & Myths": {
+					"prompt": "What stories are frequently told?\nWhat stories are used to shape the youth?\nWhat myths shape the culture? (for example to reinforce their skepticism or war like behaviour)\nWhat key events occurred?"
+				}
+			}
+		},
+		"Psychology": {
+			"prompt": "",
+			"list": {
+				"Sleep and dreaming": {
+					"prompt": "Do they sleep? How often and for how long (generally)?\nAre they diurnal, noctural, ...?\nIs sleep a requirement? Can they suffer from sleep deprivation?\nDo they dream? How does this factor change their daily lifes, if at all?"
+				},
+				"Consciousness and Thought": {
+					"prompt": "How smart is your culture? Are they sentient? Sapient?\nAre they self-aware?\nAre they adept are particular subjects, such as Mathematics, Diplomacy, problem solving, etc?\nHow do they rank their own intelligence to that of others? Does their IQ grant them a sense of superiority/Inferiority?\nHow easily do they learn? Do they learn better by experiencing, practicing, reading...?"
+				},
+				"Motivation and Emotion": {
+					"prompt": "Do they feel emotion?\nHow do they perceive those emotions?\nDo they characterize them as pleasant and unpleasant?\nWhat motivates them?\nDo they have a clear hierarchy of needs?"
+				},
+				"Sexuality and Love": {
+					"prompt": "How is sexuality defined in the terms of their biological, erotic, physical, emotional, social, or spiritual feelings and behaviors?\nDo they practice any abstinence?\nDo they experience emotional attachment?\nDo those experiences include familial, platonic and/or romantic love?"
+				},
+				"Humour": {
+					"prompt": "Does your culture have a sense of humour? If so, what do they find humorous?\nDo they have a dedicated profession for humour? (Comedians, Jesters, etc)\nWhat kinds of humour does your culture not enjoy?"
+				},
+				"Mental Health": {
+					"prompt": "Can your culture suffer Mental disabilities? If so, what are they?\nCan your culture be born with Mental disorders, such as Down's Syndrome, Autism, Bipolar Disorder, Multiple Personalities, etc?\nDoes the Mental health of your culture worsen with age?\nWhat is your society's reaction to the mentally disabled? Are they cared for or are they discarded?"
+				}
+			}
+		},
+		"Culture & Art": {
+			"prompt": "",
+			"list": {
+				"Values & Ethics": {
+					"prompt": "What does your culture consider fundamentally important? Family, Freedom, Peace, Education, etc?\nWhat does your culture consider Right or Wrong?\nDo your culture have Charity?\nWhat is their opinion on Killing/Accidental Death?\nAre acts such as Lying, Cheating, Fraud deemed acceptable?\nIs there slavery?"
+				},
+				"Language": {
+					"prompt": "How does your culture communicate?\nWhat is your culture' language called?\nHow is this language used? Is it verbal, written, or gesture-based?\nAre there multiple languages throughout your world?"
+				},
+				"Writing": {
+					"prompt": "Can your culture write? If so, how do they write? Do they use ink, chalk, clay tablets, etc?\nDo they use an alphabet?\nHow are words and sentences constructed?\nDo they use punctuation?"
+				},
+				"Art": {
+					"prompt": "Is your culture capable of artistic expression?\nDo they prefer one type of art form more than others? Music, Painting, Sculpture, Dance, Theatre, etc?"
+				},
+				"Recreation": {
+					"prompt": "Is recreational time valued?\nHow is leisure time spent?\nWich games and sports are practiced?"
+				},
+				"Education": {
+					"prompt": "Does your culture have an organised education system? If so, at what age does your culture enter this system?\nDoes this system bestow any form of status? Is education considered a privilege, a right, or something to avoid?"
+				}
+			}
+		},
+		"Science & Technology": {
+			"prompt": "",
+			"list": {
+				"Science": {
+					"prompt": "Does your culture use science?\nDoes your culture use Mathematics? If so, what number base do they use?\nDoes your culture use Chemistry, Computing, Robotics, etc?\nAre there unique subjects of science that your culture has developed?\nHow much is known about the laws of nature, physics, and magic?\nHow much of what is commonly known is factually wrong?"
+				},
+				"Building Materials": {
+					"prompt": "What does your culture make their buildings out of?\nWhat common materials does your culture have access to?\nAre there any materials that your culture cannot use/make?"
+				},
+				"Units of Measurement": {
+					"prompt": "How does your culture measure Length, Distance, Weight, Time, etc?\nHow does it compare with other systems like Meters, Inches, Miles, etc?\nHow are these units determined? Are they standardised?"
+				},
+				"Architecture": {
+					"prompt": "How are their buildings designed?\nHow are Cities/Villages designed? Do they rely on walls?\nHow tall can buildings get?\nIs there a standard design for particular buildings? Houses, Schools, Hospitals, etc?"
+				},
+				"Tools": {
+					"prompt": "What types of tools does your culture use?\nAre there special/unique tools? If so, what do these tools look like? How are they used?\nAre these tools manual or powered? If they are powered, what fuels their power?\nIn what areas might magic replace technology?"
+				},
+				"Transportation": {
+					"prompt": "Has your culture invented the wheel?\nDoes your culture have motorised transport? If so, what fuels them?\nAre animals used as a form of transport?\nAre there aircraft? If so, what do they looks like? How do they function?\nIs sailing a form of transport that your culture uses?\nAre there magical means of transportation?\nHow available is water transportation?\nHow common is travel? How dangerous is travel?\nDoes the concept of travelling just “to see the world” or for fun even exist?\nAre there good roads?"
+				},
+				"Communication": {
+					"prompt": "How are messages sent when necessary?\nIs there a public or private postal system, or does everyone of importance have to send messengers?\nAre there magical means of communication? How common and reliable are they? How expensive?\nHow do people find out what is happening in the world?"
+				},
+				"Animal Husbandry": {
+					"prompt": "Has your culture domesticated any animals? For food, materials, protection, etc?\nDoes your culture have pets? If so, what animals are considered pets?\nAre there animal livestock?"
+				},
+				"Medicine & Surgery": {
+					"prompt": "What types of Medicine does your culture use? Herbal, Synthetic, Chemical?\nDoes your culture practice Surgery? Is it part of a centralised healthcare system, or performed by independent doctors/healers?\nCan your culture modify their bodies using cybernetic prosthetics? Are there any limitations linked to them? Cumbersome power supply, Body rejection, Social stigma?\nWho are the healers? Do you have to have a talent to heal? Who can become a healer?\nWho trains healers, herbalists, apothecaries, surgeons, magical and non-magical?\nHow available are such services to ordinary people?\nHow much is known about anatomy, physiology, pathology, psychology, and so on?\nAre treatments based on purely practical experience, or do healers understand at least some of what they are doing?\nIs healing generally a magical process?\nWhat kinds of treatments are available and how effective are they?",
+					"list": {
+						"Birth": {
+							"prompt": "Is there a reliable method of birth control?\nWho normally handles births?\nWhat is the maternal mortality rate? The infant mortality rate?"
+						},
+						"Death": {
+							"prompt": "Is it possible to resurrect or resuscitate someone who has died?\nIf revival is possible, how long is it before it becomes impossible, or before serious brain damage sets in?"
+						},
+						"Insanity": {
+							"prompt": "How is insanity treated?\nAre there asylums or treatment centres?\nHow effective are treatments for insanity?"
+						}
+					}
+				},
+				"Timekeeping": {
+					"prompt": "How is time kept?\nWhat units are time kept in? Hours, Minutes, or something else?\nIs there a specific device for keeping time? Clock, Candle, Sundial, etc?\nAre there different methods of timekeeping across different world cultures?"
+				}
+			}
+		},
+		"Religion": {
+			"prompt": "",
+			"list": {
+				"Deities": {
+					"prompt": "Does your culture have a religion? If so, is it a pantheon or monotheistic?\nDo these gods represent different things? War, Love, Fire, Oceans, etc?\nIs there a mythos behind these gods? Are gods related to each other?"
+				},
+				"Afterlife, Heaven & Hell": {
+					"prompt": "Does your culture believe in an afterlife? If so, how is it represented?\nAre there separate places for the Sinners and the Pious when they die?\nWhat are the conductions for being sent to these places?"
+				},
+				"Origin of the Soul": {
+					"prompt": "Does culture believe in a soul?\nWhat happens to this soul upon death?"
+				},
+				"Symbolism": {
+					"prompt": "What symbol does this religion consider sacred?\nAre there multiple symbols for different religious activities? Fertility icons, holy text, etc?\nAre there sacred places? Altars, forests, shrines, Stone mound, etc?\nDoes your culture build Churches, Chapels, Cathedrals, etc?"
+				},
+				"Burial Rites": {
+					"prompt": "What does your culture do with their dead? Are they cremated, buried, placed in tombs, etc?\nWhat are the standard motions for these rites, if any? Wakes, fasts, days of prayer, etc?\nDo more important members of your culture get special treatment when they die? State funerals, period of mourning, minute silence, etc?"
+				},
+				"Morals": {
+					"prompt": "What does your culture regard as a holy act?\nWhat is considered a sin? Is Homosexuality accepted?\nAre these sins Original or Absolute?\nAre sins redeemable? If so, how are they redeemed? Confession, Self-flagellation, Donations, etc?\nIs there a form of blood sacrifice? Animal sacrifice, 'Human' sacrifice, actual human  sacrifice?"
+				},
+				"Superstitions": {
+					"prompt": "What unnatural force does your culture fear?\nDoes your culture believe in Bad Luck/Curses? How are they ‘cured’?\nAre there any objects considered ‘Lucky’?"
+				},
+				"Genesis & Creation": {
+					"prompt": "How is your world’s creation myth?\nWas your culture created by the same god or a different one?\nHow is your world believed to end? Armageddon, Rapture, etc?"
+				}
+			}
+		},
+		"Government": {
+			"prompt": "",
+			"list": {
+				"Governmental Style": {
+					"prompt": "How does your culture govern themselves?\nIs there a central government? If so, who is in charge? How are they appointed?\nDoes this government allow anyone to govern?\nDo people pay their government in taxes, in labour, in crops, in military service? \nHow is succession determined?\nIs there an heir apparent (either actual or political)?\nWhat happens if the heir is a child?"
+				},
+				"Politics": {
+					"prompt": "Who has the right to levy taxes?\nHow are the people with the power to give orders chosen?\nWho provides support services for the head of state and what are they called (examples: councilors, ministers, secretaries, viziers)?\nWho is responsible for protecting the head-of-state?\nWhat safeguards does the head-of-state have against assassins, poison, assault, and magical attack?\nAre any activities licensed or certified (driving, dog ownership, being an attorney or a physician)? \nWho does the certification or licensing? \nIs it merely formal (pay a fee, and get a license), or are there qualifications to meet?\nCan licenses or certifications be revoked, and if so, how?\nHow much influence do special interest groups (such as merchants, wizards, or religious sects) have on politics?\n What political positions are considered conservative?\nWhat political positions are considered liberal? \nAre there political positions that are unthinkable?\nDoes your culture have a constitution? If so, what does this constitution contain?\nWhat rights does your culture have? Are some rights reserved for certain members of society?\nIs there any form of free expression, freedom of speech, freedom of movement, etc?\nAre there political parties? What are the major political factions at present? How long have the current political factions been around?"
+				},
+				"Public Services": {
+					"prompt": "What services does the government or head-of-state provide?\nAre schools, wells, courts, and the army paid for by taxes?\nWhat services do people expect from their government?"
+				},
+				"Civil Organisations": {
+					"prompt": "Are there worker unions, civil rights groups, etc?\nHow are these groups regarded by the governing authority?\nAre protests common? Can revolutions occur?"
+				},
+				"Law & Order": {
+					"prompt": "What are considered normal and legal ways of gathering evidence and determining guilt?\nAre torture and magic part of the legal system?\nAre arbitrary judgements by a lord or landowner allowed, or is there a standard that they are supposed to follow? \nIs there an appeal system?\nIs everyone tried in the same courts or are there special courts for special classes of people — for example, are mages tried in specialized wizard’s court?\n Are there separate courts for civil and criminal matters? Magical and non-magical matters? Of culture and outsiders? Religious matters?\nWhat things are considered truly serious crimes and why?\nWhat are the punishments for serious versus minor crimes?\nAre there prisons, or are people punished and released?\nAre there degrees of punishment such as fines, branding, public whippings, removal of body parts, executions — or do they just hang everybody regardless of the crime?\nWho is responsible for catching criminals?\nAre there independent precincts, overlapping districts, or separate jurisdictions?\nCan law enforcement be hired?\nAre there lawyers or advocates?\nWho can afford legal representation? \nAre people guilty until proven innocent, innocent until proven guilty, or does it depend on the mood the bench is in when the case comes in front of it?\nAre there assumptions made about how an accused criminals will be treated?\nAre there judges other than the nobles or gentry?\nIs mob justice common? Is it legal?\nHow is mob justice viewed by society? \nAre highwaymen, muggers, bandits, or pirates common or rare?\nWhat sorts of crimes would the average citizen be likely encounter in their lifetime?\nWho can make or repeal laws?\nAre there laws forbidding certain types of people (peasants, wizards, priests, women) from carrying arms?\nAre there laws requiring certain people to be skilled with certain weapons?\nAre certain spells (as opposed to magic generally) illegal?\nHow would a criminal magician be detected? Apprehended? Punished? "
+				},
+				"Foreign Relations": {
+					"prompt": "Are there multiple governments on your world? If so, how do they interact?\nIs there a global council of world governments?\nHow do nations communicate with each other?\nWhich nations have formal relations with other countries?\nWho can be ambassadors and envoys?\nAre there standing embassies and consulates, or are envoys sent only when something specific comes up?\nHow are treaties arranged?\nAre there any significant ones currently in force or coming up for signing?\nHow much do official attitudes toward other countries affect commerce and trade?\nDo merchants pretty much ignore tensions between governments as long as they can make a profit, or will this get them into trouble?\nHow much formal spying and intelligence gathering is normally done by governments?\nHow much spying is done by the military?\nDo merchants (or companies) engage in espionage?\nWho has the best information gathering system?\nWhich countries are traditional allies?\nWhich countries are traditional rivals?\nHow do these traditional alliances and rivalries affect foreign policy?\nWhich heads-of-state are related by blood or marriage?\nHow important are political marriages?\nHow do ties of blood and marriage affect foreign policy?"
+				}
+			}
+		},
+		"Society": {
+			"prompt": "",
+			"list": {
+				"Class System": {
+					"prompt": "Is there a class system in your society? If so, what style is this system?\nIs there a form of discrimination or segregation? If so, how is it justified?\nDoes this system allow for class movement? Can the lower class become upper class?"
+				},
+				"Nobility": {
+					"prompt": "Does royalty exist?\nAre there societal elites? If so, what constitutes an elite?\nDo the nobles interact with other members of society? Is there a strict separation?"
+				},
+				"Beauty Standards": {
+					"prompt": "What does your culture regard as beautiful?\nDoes your culture use cosmetics?\nDoes society have any expectations in regards to beauty/appearance? Are these expectations related to Age, Gender, Class, etc?\nDoes clothing and jewellery relate to beauty?"
+				},
+				"Relationships": {
+					"prompt": "How is sexual orientation defined?\nCan your culture have friends? If so, how do they make friends? Who can be their friends?\nHow does your culture acquire a mate?\nAre there any intricacies to courting?\nHow is marriage viewed? Does it exist? Is it expected?\nAre they free to match with one another or is matching made by an authority (for example family)?\nWhen do individuals become adults? Is there a rite of passage?"
+				},
+				"Gender Roles": {
+					"prompt": "Are there separate attitudes regarding gender?\nDo sons/daughters get married off?\nWho is regarded as the prime parent?\nAre there particular jobs/activities reserved for only one gender?\nDo extra benefits get granted to one particular gender?"
+				},
+				"Etiquette": {
+					"prompt": "Does your culture have a particular attitude towards eating? Do servants eat last? Do they make a toast or pray before eating?\nDoes your culture eat their meals in a specific order?\nAre there standard greetings and farewells?\nAre certain gestures considered rude?\nAre there common salutations? Sir, Madam, Master, etc?"
+				},
+				"Clothing and Apparel": {
+					"prompt": "What does your culture commonly wear? Are there different items of clothing?\nDo different styles of clothing have specific meanings? Wedding dresses, Priest's vestments, etc?"
+				},
+				"Jewellery and Tattoos": {
+					"prompt": "Does your culture wear jewellery? If so, where do they commonly wear them?\nDo tattoos/body paint have specific cultural significance?\nHow is the jewellery made? What is it made from? Does jewellery correlate with social class?"
+				},
+				"Cooking & Brewing": {
+					"prompt": "What types of culinary practises does your culture have?\nDoes your culture produce Alcohol? Is the Prohibition?\nWhat unique recipes does your culture have?"
+				},
+				"Narcotics": {
+					"prompt": "Does your culture have any form of drugs? Are these drugs a problem in their society?\nWhat are the effects? Are they recreational or harmful?\nIs there a social stigma attached to its use?\nAre drugs used as a combat aid? Do these drugs enhance any abilities?"
+				}
+			}
+		},
+		"Economy": {
+			"prompt": "",
+			"list": {
+				"Goods and Production": {
+					"prompt": "What goods are produced and where are they produced?\nIs there any resource or produced good that is associated with them?"
+				},
+				"Trade": {
+					"prompt": "How does your culture exchange goods? What goods are considered tradeable?\nIs bartering allowed?\nAre there marketplaces, trade routes, etc?\nWhat are the major trade goods? "
+				},
+				"Currency": {
+					"prompt": "Does your culture have a form of currency? If so, what does it looks like? What is it made from? Are there different values within this currency?\nAre there multiple currencies in your world? If so, what do they look like? What are they made from? What are the exchange rates, if any?\nIs there anything that maintains this currency's value? Gold reserves, digital algorithm, etc?\nWhat are people’s attitudes toward money?\nHow easy and common is counterfeiting? \nWhat are people’s attitudes toward poverty?"
+				},
+				"Financial Organisations": {
+					"prompt": "Are there banks? If so, do they provide loans, bookkeeping, Worker pensions etc?\nIs there a centralised banking system or are they independent?\nIs there any form of financial regulation? Is Cronyism standard practice?"
+				},
+				"Business and Industry": {
+					"prompt": "Does your culture have consumerism/commercialisation?\nCan your culture own businesses? Are there consumer franchises?\nIs there industry in your world? Are there factories?\nHow much power are corporations allowed to have? Are there mega-corporations that control nations/planets?"
+				}
+			}
+		},
+		"War": {
+			"prompt": "",
+			"list": {
+				"Wars": {
+					"prompt": "With which countries/cultures has there been conflict in the recent past?\nHas there been any recent wars? Who won?\nAre there ongoing tensions from the most recent war?"
+				},
+				"Weaponry": {
+					"prompt": "What types of weapons does your culture use? Do they have firearms?\nHow are these weapons made?\nWho are allowed to carry these weapons?"
+				},
+				"Rules of Engagement": {
+					"prompt": "Does your culture have specific tactics?\nCan your culture show mercy? Do they take prisoners?\nAre unarmed civilians considered fair-game?\nIs total destruction a standard military action?"
+				},
+				"Organization": {
+					"prompt": "How does your culture fight? Are there different techniques for hand-to-hand combat?\nAre there regimented training routines? Military drills, katas, etc?\nHow much has the presence of magic affected strategy and tactics?\nDo army commanders have to use specific formations or techniques to deal with possible magical attacks?\nHow can magic be used as part of a battle plan?\nHow are armys usually structures?\nAre command structures formal and independent or is everybody officially under the command of the lord who brought them to army? What are the various ranks and titles?\nAre there professional soldiers and mercenaries? How many are are trained soldiers?\nDoes the army accept volunteers?\nHow large is a typical army?"
+				},
+				"War crimes": {
+					"prompt": "Are there war crimes in your societies? If so, what constitutes a war crime?\nHow are these war crimes judged? What are the punishments?\nIs there a form of Military police?\nDoes the jurisdiction of Civil law and Military law intersect?"
+				},
+				"Armour and Defence": {
+					"prompt": "Does your culture wear armour? If so, what is it made from? How much of their body does it cover? How effective is it against different attacks?\nHow does your culture defend its cities?\nAre there armies? If so, how are soldiers recruited? Is there a form of draft, military service, etc?\nWho in in command of the army? What is the chain of command?\nAre there mercenary groups/militias?"
+				},
+				"Fealty and Allegiances": {
+					"prompt": "Is there a form of oath keeping? Bannermen, Blood debts, honour-bound, etc?\nWhat alliances are there in your world? Who are they in these alliances?\nAre there smaller factions within these Alliances? If so, Is there political intrigue?"
+				}
+			}
+		},
+		"Magic": {
+			"prompt": "",
+			"list": {
+				"Society View": {
+					"prompt": "How do various religions view magic? Do any require or forbid priests to practise magic?\nIs Magic outlawed or viewed skeptically?\nAre there legal limits to the use of magic?\nAre magical users praised?\nIs magical pursuit an oddity?\nDo some positions require that their holder be a wizard?\nHow has the presence of magic and magicians affected law and government?"
+				},
+				"Source of all Magic": {
+					"prompt": "Where does the Magical energy originate? Is it a natural phenomenon?\nIs Magic infinite or a finite resource? Does it get weaker the more it is used?\nCan all members of your culture use magic? Is Magic dependant on intelligence?"
+				},
+				"Magic Archetypes": {
+					"prompt": "Are there multiple forms of Magic? Fire, Ice, Light, Dark, etc?\nAre there different institutions for different archetypes of Magic? Schools/Colleges, Arcane University, etc?"
+				},
+				"Magic Applications": {
+					"prompt": "Does Magic replace/override Technology? Are the two interchangeable?\nIs Magic the preferred method of healing and/or combat?\nAre there any restrictions put in place for Magic use? If so, who enforces these restrictions?"
+				}
+			}
+		}
+	}
+}

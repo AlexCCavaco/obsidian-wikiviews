@@ -1,0 +1,205 @@
+{
+	"links": true,
+	"title": "Building Name",
+	"type": "building",
+	"categories": {
+		"abbey": [ "Abbey","Abbeys" ],
+		"citadel": [ "Citadel","Citadels" ],
+		"airport": [ "Airport","Airports" ],
+		"commercial": [ "Commercial","Commercials" ],
+		"industry": [ "Industry","Industries" ],
+		"office": [ "Office","Offices" ],
+		"port": [ "Port","Ports" ],
+		"shop": [ "Shop","Shops" ],
+		"house": [ "House","Houses" ],
+		"bank": [ "Bank","Banks" ],
+		"capitol": [ "Capitol","Capitols" ],
+		"castle": [ "Castle","Castles" ],
+		"palace": [ "Palace","Palaces" ],
+		"apartment": [ "Apartment","Apartments" ],
+		"skyscraper": [ "Skyscraper","Skyscrapers" ],
+		"villa": [ "Villa","Villas" ],
+		"cemetery": [ "Cemetery","Cemeteries" ],
+		"construction": [ "Construction","Constructions" ],
+		"church": [ "Church","Churches" ],
+		"place-of-worship": [ "Place of Worship","Place of Worships" ],
+		"park": [ "Park","Parks" ],
+		"playground": [ "Playground","Playgrounds" ],
+		"alley": [ "Alley","Alleys" ],
+		"amphitheatre": [ "Amphitheatre","Amphitheatres" ],
+		"aqueduct": [ "Aqueduct","Aqueducts" ],
+		"dungeon": [ "Dungeon","Dungeons" ],
+		"archive": [ "Archive","Archives" ],
+		"library": [ "Library","Libraries" ],
+		"arena": [ "Arena","Arenas" ],
+		"gallery": [ "Gallery","Galleries" ],
+		"aviary": [ "Aviary","Aviaries" ],
+		"bar": [ "Bar","Bars" ],
+		"barber": [ "Barber","Barbers" ],
+		"bathhouse": [ "Bathhouse","Bathhouses" ],
+		"battlefield": [ "Battlefield","Battlefields" ],
+		"wharf": [ "Wharf","Wharfs" ],
+		"brewery": [ "Brewery","Breweries" ],
+		"brothel": [ "Brothel","Brothels" ],
+		"cafe": [ "Cafe","Cafes" ],
+		"canal": [ "Canal","Canals" ],
+		"casino": [ "Casino","Casinos" ],
+		"cathedral": [ "Cathedral","Cathedrals" ],
+		"temple": [ "Temple","Temples" ],
+		"chapel": [ "Chapel","Chapels" ],
+		"circus": [ "Circus","Circuses" ],
+		"college": [ "College","Colleges" ],
+		"academy": [ "Academy","Academies" ],
+		"consulate": [ "Consulate","Consulates" ],
+		"courthouse": [ "Courthouse","Courthouses" ],
+		"cottage": [ "Cottage","Cottages" ],
+		"blacksmith": [ "Blacksmith","Blacksmiths" ],
+		"crypt": [ "Crypt","Crypts" ],
+		"tanner": [ "Tanner","Tanners" ],
+		"leather-worker": [ "Leather Worker","Leather Workers" ],
+		"customs": [ "Customs","Customs" ],
+		"dam": [ "Dam","Dams" ],
+		"embassy": [ "Embassy","Embassies" ],
+		"estate": [ "Estate","Estates" ],
+		"factory": [ "Factory","Factories" ],
+		"farm": [ "Farm","Farms" ],
+		"fort": [ "Fort","Forts" ],
+		"fortress": [ "Fortress","Fortresses" ],
+		"forum": [ "Forum","Forums" ],
+		"garden": [ "Garden","Gardens" ],
+		"complex": [ "Complex","Complexes" ],
+		"hall": [ "Hall","Halls" ],
+		"gym": [ "Gym","Gyms" ],
+		"hangar": [ "Hangar","Hangars" ],
+		"hideout": [ "Hideout","Hideouts" ],
+		"hospital": [ "Hospital","Hospitals" ],
+		"highway": [ "Highway","Highways" ],
+		"hotel": [ "Hotel","Hotels" ],
+		"motel": [ "Motel","Motels" ],
+		"resort": [ "Resort","Resorts" ],
+		"spa": [ "Spa","Spas" ],
+		"inn": [ "Inn","Inns" ],
+		"keep": [ "Keep","Keeps" ],
+		"laboratory": [ "Laboratory","Laboratories" ],
+		"lair": [ "Lair","Lairs" ],
+		"lighthouse": [ "Lighthouse","Lighthouses" ],
+		"manor": [ "Manor","Manors" ],
+		"market": [ "Market","Markets" ],
+		"memorial": [ "Memorial","Memorials" ],
+		"base": [ "Base","Bases" ],
+		"mine": [ "Mine","Mines" ],
+		"city-hall": [ "City-hall","City-halls" ],
+		"ministry": [ "Ministry","Ministries" ],
+		"monastery": [ "Monastery","Monasteries" ],
+		"wonder": [ "Wonder","Wonders" ],
+		"observatory": [ "Observatory","Observatories" ],
+		"parliament": [ "Parliament","Parliaments" ],
+		"public-service": [ "Public Service","Public Services" ],
+		"portal": [ "Portal","Portals" ],
+		"power-plant": [ "Power Plant","Power Plants" ],
+		"prison": [ "Prison","Prisons" ],
+		"quarry": [ "Quarry","Quarries" ],
+		"venue": [ "Venue","Venues" ],
+		"road": [ "Road","Roads" ],
+		"stable": [ "Stable","Stables" ],
+		"aquarium": [ "Aquarium","Aquariums" ],
+		"torture": [ "Torture","Tortures" ],
+		"ruin": [ "Ruin","Ruins" ],
+		"sewer": [ "Sewer","Sewers" ],
+		"seaport": [ "Seaport","Seaports" ],
+		"shelter": [ "Shelter","Shelters" ],
+		"shrine": [ "Shrine","Shrines" ],
+		"stadium": [ "Stadium","Stadiums" ],
+		"street": [ "Street","Streets" ],
+		"parlor": [ "Parlor","Parlors" ],
+		"supermarket": [ "Supermarket","Supermarkets" ],
+		"storage": [ "Storage","Storage" ],
+		"tower": [ "Tower","Towers" ],
+		"tree": [ "Tree","Trees" ],
+		"university": [ "University","Universities" ],
+		"warehouse": [ "Warehouse","Warehouses" ],
+		"workshop": [ "Workshop","Workshops" ],
+		"well": [ "Well","Wells" ],
+		"monument": [ "Monument","Monuments" ],
+		"statue": [ "Statue","Statues" ],
+		"bridge": [ "Bridge","Bridges" ],
+		"sight": [ "Sight","Sights" ],
+		"pool": [ "Pool","Pools" ],
+		"club": [ "Club","Clubs" ],
+		"zoo": [ "Zoo","Zoos" ],
+		"synagogue": [ "Synagogue","Synagogues" ],
+		"basilica": [ "Basilica","Basilicas" ]
+	},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Parent Location": {},
+		"Region": {},
+		"Constructed": {},
+		"Constructed Event": {},
+		"Abandoned": {},
+		"Abandoned Event": {},
+		"Destroyed": {},
+		"Destroyed Event": {},
+		"Era": {},
+		"Ruled By": { "tag": "ruled_by" },
+		"Parent Organization": { "tag": "parent_org" },
+		"Notable Dates": {},
+		"Timezone": {},
+		"Area": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Building general description. With other prominent/notable general details?"
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"History": {
+			"prompt": "What are some notable historical events? Building/Construction/Destruction/Rebuilding/Additions/Fires/Floods/..."
+		},
+		"Purpose and Usage": {
+			"prompt": "What is the purpose of the Building? Has it changed? Is it still in use?",
+			"list": {
+				"Ownership": {
+					"prompt": "Who owns it? Did they always? Is it a family/government/organization/faction/...?"
+				}
+			}
+		},
+		"Location": {
+			"prompt": "Where is the Building located? What is near by? Any relevant features?"
+		},
+		"Architecture": {
+			"prompt": "What does the Building look like? What are its influences?",
+			"list": {
+				"Layout and Structure": {
+					"prompt": "What is the layout of the building? Any notable characteristics?"
+				},
+				"Exterior": {
+					"prompt": "What does the exterior look like? What are some notable features?"
+				},
+				"Landscape and Surroundings": {
+					"prompt": "How is the surrounding are landscaped? Any gardens/plazas/parks/fauna/flora/...?"
+				},
+				"Interior": {
+					"prompt": "What does the interior look like? What are some notable rooms?"
+				}
+			}
+		},
+		"Influence and Symbolism": {
+			"prompt": "What is the influence of this building? What is its symbolism? Any depiction in art? Any myths or tales told by the people?"
+		}
+	}
+}

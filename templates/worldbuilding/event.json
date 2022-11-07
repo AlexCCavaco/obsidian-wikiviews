@@ -1,0 +1,120 @@
+{
+	"links": true,
+	"title": "Event Name",
+	"type": "event",
+	"categories": {},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Date": {},
+		"Started On": {},
+		"Ended On": {},
+		"Duration": {},
+		"Venue": {},
+		"Competition": {},
+		"Location": {},
+		"Type": {},
+		"Status": {},
+		"Price Money": {},
+		"First": {},
+		"Last": {},
+		"Frequency": {},
+		"Most Recent": {},
+		"Previous": {},
+		"Next": {},
+		"Perpetrator": {},
+		"Founder": {},
+		"Inventor": {},
+		"Leader": {},
+		"Organizers": {},
+		"Nations": {},
+		"Teams": {},
+		"Participants": {},
+		"Records": {},
+		"Medalists": {},
+		"Champion": {},
+		"Attendance": {},
+		"Cause": {},
+		"Motive": {},
+		"Target": {},
+		"First Reporter": {},
+		"Budget": {},
+		"Patron": {},
+		"Sponsor": {},
+		"Filmed By": {},
+		"Key Events": {},
+		"Result": {},
+		"Territorial Changes": {},
+		"Belligerents": {},
+		"Coroner": {},
+		"Strength": {},
+		"Reported Injuries": {},
+		"Reported Deaths": {},
+		"Reported Missing": {},
+		"Reported Damages": {},
+		"Displaced": {},
+		"Arrests": {},
+		"Suspects": {},
+		"Accused": {},
+		"Convicted": {},
+		"Trial": {},
+		"Verdict": {},
+		"Charges": {},
+		"Awards": {},
+		"Casualties and Losses": {},
+		"Preceded By": {},
+		"Followed By": {},
+		"Area": {},
+		"Timezone": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "What event is this? General overview."
+		},
+		"Summary": {
+			"prompt": "Overview on what happened?"
+		},
+		"Background": {
+			"prompt": "What led up to this? Is this occurring after something? Is this a recurrent thing? Were there unexpected difficulties?"
+		},
+		"Participants": {
+			"prompt": "Who participated? Under which circumstances? Did anyone join in the middle? Did anyone leave?"
+		},
+		"Important Developments": {
+			"prompt": "Any important developments that were made during the event?"
+		},
+		"Format": {
+			"prompt": "Does this event have a strict(esc) format? What is it?"
+		},
+		"Results": {
+			"prompt": "What happened in the end? Was anything changed? Was this a competition with different events, winners and records? Aftermath? Diplomacy?"
+		},
+		"Technology": {
+			"prompt": "Technologies used during this event?"
+		},
+		"Statistics": {
+			"prompt": "Any relevant statistics for this event? Goals, assists, records, deaths, injured, missing,...?"
+		},
+		"Symbols": {
+			"prompt": "Any symbols that were made relevant or became attached to this event?"
+		},
+		"Legacy": {
+			"prompt": "What legacy does it leave behind? Was it influential? Is there any cultural movements? Affects on art?"
+		},
+		"Criticism": {
+			"prompt": "Is there any criticism? What and in relation to what?"
+		}
+	}
+}

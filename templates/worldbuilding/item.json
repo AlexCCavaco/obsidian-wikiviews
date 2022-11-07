@@ -1,0 +1,114 @@
+{
+	"links": true,
+	"title": "Item Name",
+	"type": "item",
+	"categories": {
+		"weapon": [ "Weapon","Weapons" ],
+		"armour": [ "Armour","Armours" ],
+		"material": [ "Material","Materials" ],
+		"element": [ "Element","Elements" ],
+		"ore": [ "Ore","Ores" ],
+		"ammunition": [ "Ammunition","Ammunition" ],
+		"art": [ "Art","Arts" ],
+		"award": [ "Award","Awards" ],
+		"machine": [ "Machine","Machines" ],
+		"clothing": [ "Clothing","Clothing" ],
+		"accessory": [ "Accessory","Accessories" ],
+		"food": [ "Food","Foods" ],
+		"drink": [ "Drink","Drinks" ],
+		"currency": [ "Currency","Currencies" ],
+		"consumable": [ "Consumable","Consumables" ],
+		"drug": [ "Drug","Drugs" ],
+		"furniture": [ "Furniture","Furniture" ],
+		"electronic": [ "Electronic","Electronics" ],
+		"valuable": [ "Valuable","Valuables" ],
+		"medical": [ "Medical","Medicals" ],
+		"appliance": [ "Appliance","Appliances" ],
+		"module": [ "Module","Modules" ],
+		"component": [ "Component","Components" ],
+		"miscellaneous": [ "Miscellaneous","Miscellaneous" ],
+		"robotic": [ "Robotic","Robotics" ],
+		"aid": [ "Aid","Aids" ],
+		"alloy": [ "Alloy","Alloys" ],
+		"metal": [ "Metal","Metals" ],
+		"tool": [ "Tool","Tools" ],
+		"toy": [ "Toy","Toys" ],
+		"trophy": [ "Trophy","Trophies" ],
+		"artifact": [ "Artifact","Artifacts" ]
+	},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Type": {},
+		"Place of Origin": {},
+		"Inventor": {},
+		"Invented": {},
+		"Designed": {},
+		"Produced": {},
+		"Manufacturer": {},
+		"Discoverer": {},
+		"Discovered": {},
+		"Extracted In": {},
+		"Destructed In": {},
+		"Materials": {},
+		"Variations": {},
+		"In Service": {},
+		"Used By": {},
+		"Used In": {},
+		"Traditionally used In": {},
+		"Owned By": {},
+		"Mass": {},
+		"Density": {},
+		"Length": {},
+		"Width": {},
+		"Price": {},
+		"Related Organizations": {},
+		"Related Technologies": {},
+		"Melting Point": {},
+		"Specifications": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Item general description and details."
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"Origin": {
+			"prompt": "What/where is the origin of this item? Who invented/created/discovered it?"
+		},
+		"Locations": {
+			"prompt": "In what circumstances doe it occur? Where is it found? Where is it produced?"
+		},
+		"Production and Materials": {
+			"prompt": "How is it produced? What does it require? What are its components/materials?"
+		},
+		"Uses and Workings": {
+			"prompt": "What is it used for? Is it combined with other items? Does it have uses in war/religion/politics/agriculture/mining/industry/magic?"
+		},
+		"Importance": {
+			"prompt": "Is this item important? To who and what for? Is its importance specific to a culture/nation/people?"
+		},
+		"Rarity": {
+			"prompt": "Is this item rare? Is its rarity natural or artificially created?"
+		},
+		"Toxicity": {
+			"prompt": "Is it toxic? To whom and under wha circumstances?"
+		},
+		"Criticism": {
+			"prompt": "Is there criticism of its use? Of its exploitation?"
+		}
+	}
+}

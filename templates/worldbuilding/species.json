@@ -1,0 +1,101 @@
+{
+	"links": true,
+	"title": "Species Name",
+	"type": "species",
+	"categories": {},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Kingdom": "",
+		"Phylum": "",
+		"Class": "",
+		"Order": "",
+		"Superfamily": "",
+		"Family": "",
+		"Genus": "",
+		"Species": "",
+		"Region": {},
+		"Notable Dates": {},
+		"Population": { "tag": "population" },
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Sapient Species Overall Description."
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"History": {
+			"prompt": "What is the history of the species?",
+			"list": {
+				"Evolution": {
+					"prompt": "How old is your species?\nDo they have common ancestors? If so, are they extinct? Are they equal in development? \nWhere on the planet did your species originate?\nWas there any outside influence to their evolution?\nWere they divinely created?"
+				},
+				"Migration": {
+					"prompt": "Does your species migrate across the planet? If so, what determines this migration? Is migration Seasonal, Cultural, Spiritual?\nAre they Sedentary (Stay in one place)?"
+				}
+			}
+		},
+		"Physiology": {
+			"prompt": "What does this species look like? Any outstanding characteristics?",
+			"list": {
+				"Body Characteristics": {
+					"prompt": "Does your species have opposable thumbs?\nWhat is their average height and weight?\nHow many arm/legs does your species have?\nDo they have multiple jointed limbs?\nDo they have tails, claws, mandibles, wings, etc?\nWhat are the common colours of their eyes, hair, skin, etc?\nHow do they move? (walk, slither, jump, etc)"
+				},
+				"Physical Capabilities": {
+					"prompt": "Does your species body allow for enhanced abilities? Climbing, flying, swimming, etc?\nAre they Telepathic/Telekinetic?\nAre they very strong? Can they move fast? Can they jump extremely high?\nIf they have a tail, is it prehensile?"
+				},
+				"Physical Limitations": {
+					"prompt": "Does your species struggle with particular physical activities?\nIs their bone structure weak/fragile?\nDoes the shape/function of their hands affect their ability to grasp objects?\nDoes the shape of their mouths make it difficult to eat, or drink fluids?\nAre certain body parts too large, small, heavy, etc, to be comfortable?"
+				}
+			}
+		},
+		"Intelligence": {
+			"prompt": "Are they intelligent? What behaviours show it? Are they self-aware? Do they use tools? Communicate? Socialize?"
+		},
+		"Biology": {
+			"prompt": "",
+			"list": {
+				"Sleeping": {
+					"prompt": "Do they sleep? How often and for how long (generally)? Are they diurnal, noctural, ...?"
+				},
+				"Biological Characteristics": {
+					"prompt": "What colour is your species' blood? \nHow does their DNA determine their physical characteristics?\nIs there Sexual Dimorphism?\nHow old can your species get? Are they Immortal?\nDo they have some form of natural camouflage? Can they control their pigmentation?\nIs there biological variation? (blood type, genetic diseases, cranial features, facial features, organ systems, eye color, hair color and texture, height and build, and skin color)"
+				},
+				"Diet and Nutrition": {
+					"prompt": "What does your species eat? Are they Herbivores, Carnivores, or Omnivores?\nAre they Cannibalistic?\nIs there a particular food substance that is harmful/deadly to them?\nWhat is their average daily calorie intake?"
+				},
+				"Disease and Immune System": {
+					"prompt": "Are there any viruses or pathogens that plague the world?\nAre they more or less prone to disease?\nDo they have any inherited immunities?\nHow strong is your species' Immune system? Do they even have one?\nAre they carriers of a disease that can affect other species?\nHow are diseases treated? Do they have/use medicine?\nDo they understand gemmology?\nCan they have some form of animal or plant based allergies?"
+				},
+				"Reproduction": {
+					"prompt": "How many genders exist?\nHow do your species procreate?\nDoes your species rely on Egg & Sperm cells? Or use other methods of impregnation?\nHow long does pregnancy last?\nHow does your species give birth? Live young , Egg laying, Pupa Larvae?"
+				},
+				"Playing": {
+					"prompt": "How important is playing? Is it generally practiced? Only by young individuals?"
+				}
+			}
+		},
+		"Threats": {
+			"prompt": "Are there any threats towards this species? Which and by whom or what?"
+		},
+		"Uses": {
+			"prompt": "Is this species used for a given purpose? Food, Transportation, Warfare, Agriculture, Industry, Medicine, ...?"
+		},
+		"Subspecies & Types": {
+			"prompt": "Are there subspecies? Which and how do they differ?",
+			"list": {
+				"Hybrids": {
+					"prompt": "Are there hybrids? With whom and what are the results?"
+				}
+			}
+		}
+	}
+}

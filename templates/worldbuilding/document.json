@@ -1,0 +1,146 @@
+{
+	"links": true,
+	"title": "Document Name",
+	"type": "document",
+	"categories": {
+		"invitation": [ "Invitation","Invitations" ],
+		"certificate": [ "Certificate","Certificates" ],
+		"announcement": [ "Announcement","Announcements" ],
+		"book": [ "Book","Books" ],
+		"series": [ "Series","Series" ],
+		"contract": [ "Contract","Contracts" ],
+		"guide": [ "Guide","Guides" ],
+		"dictionary": [ "Dictionary","Dictionaries" ],
+		"encyclopedia": [ "Encyclopedia","Encyclopedias" ],
+		"agreement": [ "Agreement","Agreements" ],
+		"journal": [ "Journal","Journals" ],
+		"newspaper": [ "Newspaper","Newspapers" ],
+		"novel": [ "Novel","Novels" ],
+		"manual": [ "Manual","Manuals" ],
+		"licence": [ "Licence","Licences" ],
+		"manuscript": [ "Manuscript","Manuscripts" ],
+		"transcript": [ "Transcript","Transcripts" ],
+		"logbook": [ "Logbook","Logbooks" ],
+		"report": [ "Report","Reports" ],
+		"article": [ "Article","Articles" ],
+		"research": [ "Research","Research" ],
+		"letter": [ "Letter","Letters" ],
+		"treaty": [ "Treaty","Treaties" ],
+		"script": [ "Script","Scripts" ],
+		"text": [ "Text","Texts" ],
+		"warrant": [ "Warrant","Warrants" ],
+		"decree": [ "Decree","Decrees" ],
+		"constitution": [ "Constitution","Constitutions" ],
+		"charter": [ "Charter","Charters" ],
+		"passport": [ "Passport","Passports" ],
+		"identification": [ "Identification","Identifications" ],
+		"bond": [ "Bond","Bonds" ],
+		"voucher": [ "Voucher","Vouchers" ],
+		"email": [ "Email","Emails" ],
+		"schedule": [ "Schedule","Schedules" ],
+		"documentation": [ "Documentation","Documentations" ],
+		"document": [ "Document","Documents" ],
+		"story": [ "Story","Stories" ]
+	},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Author": {},
+		"Subject": {},
+		"Translator": {},
+		"Illustrator": {},
+		"Publisher": {},
+		"Signatories": {},
+		"Language": {},
+		"Genre": {},
+		"Set In": {},
+		"Series": {},
+		"Country": {},
+		"Origin": {},
+		"Published": {},
+		"Published Event": {},
+		"Number of Books": {},
+		"Pages": {},
+		"Awards": {},
+		"Preceded By": {},
+		"Followed By": {},
+		"Related Location": {},
+		"Related Myth": {},
+		"Ratifications": {},
+		"Expiration": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "General outline of the book, type, relevance and contents.?"
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"History and Concept": {
+			"prompt": "Why was this document written? What are its origins? Any relevant events that led to it, influenced it or happened while or after it being written?",
+			"list": {
+				"Background": {
+					"prompt": "Any relevant events about the author? Was it released posthumous? Any drafts released afterwards? In what setting wa it made?"
+				},
+				"Influences": {
+					"prompt": "What influenced its creation?"
+				},
+				"Publication": {
+					"prompt": "Any relevant events at time of publication?"
+				},
+				"Translations": {
+					"prompt": "Are there translations? How widespread?"
+				}
+			}
+		},
+		"Structure and Contents": {
+			"prompt": "Any relevant experts? Or a detail of its structure/chapters/parts/themes/..."
+		},
+		"Theme and Influences": {
+			"prompt": "What is this document about? What theme does it have? Is there a deeper meaning?",
+			"list": {
+				"Characters": {
+					"prompt": "Relevant Characters? A description about them."
+				},
+				"Genre": {
+					"prompt": "In what genre does it fit? In multiple?"
+				},
+				"References": {
+					"prompt": "Does it reference any other work or event? Is it complementary or in opposition?"
+				},
+				"Illustrations": {
+					"prompt": "Are there illustrations? What do they mean? In what style are the made?"
+				}
+			}
+		},
+		"Versions": {
+			"prompt": "Are there multiple versions? How do they differ? What prompt their creation?"
+		},
+		"Influence and Legacy": {
+			"prompt": "How has this document influence society and culture? Is it well-known or niche? Is this a lost document? What legacy has it left behind?"
+		},
+		"Reception": {
+			"prompt": "How was it received?",
+			"list": {
+				"Adaptations": {
+					"prompt": "Were any adaptation made? By who and in what circumstances? In what form/medium?"
+				},
+				"Criticism": {
+					"prompt": "Is there criticism towards this document? What, by whom and why?"
+				}
+			}
+		}
+	}
+}

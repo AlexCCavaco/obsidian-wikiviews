@@ -1,0 +1,114 @@
+{
+	"links": true,
+	"title": "Language Name",
+	"type": "language",
+	"categories": {},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Era": {},
+		"Pronunciation": {},
+		"Native To": {},
+		"Ethnicity": {},
+		"Speakers": {},
+		"Language Family": {},
+		"Early Forms": {},
+		"Standard Forms": {},
+		"Dialects": {},
+		"Writing System": {},
+		"Signed Forms": {},
+		"Official Language In": {},
+		"Recognized Language In": {},
+		"Regulated By": {},
+		"Created": {},
+		"Created Event": {},
+		"Disused": {},
+		"Disused Event": {},
+		"Notable Dates": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Language General Details."
+		},
+		"Classification": {
+			"prompt": "Classification of the Language within others and its family. Part of any branch?"
+		},
+		"History": {
+			"prompt": "History of the Language. Any ancient/old forms? How has it evolved? How did it spread? By whom? Dialect formation?"
+		},
+		"Geographic Distribution": {
+			"prompt": "Where is this language spoke? By whom? How popular is it? Are these official or minority language status?"
+		},
+		"Phonology": {
+			"prompt": "How does this language sound? Is it consistent across dialect and regions? Is there a standard pronunciation?",
+			"list": {
+				"Consonants": {
+					"prompt": "How are consonants used? How do they differ in sound? Are there categories of consonants?"
+				},
+				"Vowels": {
+					"prompt": "How are vowels used? Are there dialect differences? Monophthongs? Diphthongs?"
+				},
+				"Stress, Rhythm and Intonation": {
+					"prompt": "What role does it play? Is there emphases on any of it? Where is stress applied? Are there strong and weak forms? Is stress used to apply meaning?"
+				},
+				"Regional Variation": {
+					"prompt": "How does phonology vary? Are there large differences?"
+				}
+			}
+		},
+		"Grammar": {
+			"prompt": "General grammar details and influences.",
+			"list": {
+				"Nouns and Adjectives": {
+					"prompt": "Noun forms? Suffices/Prefixes/types (proper, count, ...)/number/possession/... Adjective position in relation to the noun. How are adjectives used? Variations/forms? Pronouns? Case? Gender?"
+				},
+				"Verbs": {
+					"prompt": "How are verbs inflected? Auxiliary verbs? Verb forms? PResent, Infinitive, Past, Gerung, Past Participle, Future? Conjugation?"
+				},
+				"Syntax": {
+					"prompt": "Order of the words? Article use? Questions? Clause? Second+ Verbs?"
+				}
+			}
+		},
+		"Vocabulary": {
+			"prompt": "General vocabulary details and influences.",
+			"list": {
+				"Word Formation": {
+					"prompt": "How are words formed? Is there an informal word usage? Acronyms?"
+				},
+				"Word Origins": {
+					"prompt": "Influences? Roots? Adoption of Words?"
+				}
+			}
+		},
+		"Writing System": {
+			"prompt": "General writing system details and influences. What alphabet is used? Is there braille? Spelling differences? Spelling to pronunciation (regular/irregular)? Punctuation? Numerals?"
+		},
+		"Organizations": {
+			"prompt": "Who controls the language? How strict are they? Are there general imposed rules? Are variations taken into account or outliers? Are there organizations for those?"
+		},
+		"Dialects, Accents and Varieties": {
+			"prompt": "Are there dialects? Many? Where? Can those be defined within groups? Are there easy defined variation on the pattern of grammar, vocabulary, pronunciation, ...? Coloquial Varieties?"
+		},
+		"Common Phrases and Examples": {
+			"prompt": "What are some common phases? Some examples of various uses?",
+			"list": {
+				"Common Names": {
+					"prompt": "Common names used? Female/Male/Unisex/Family? Formation, Structure and Origins?"
+				}
+			}
+		}
+	}
+}

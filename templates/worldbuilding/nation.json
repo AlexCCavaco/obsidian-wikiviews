@@ -1,0 +1,390 @@
+{
+	"links": true,
+	"title": "Nation Name",
+	"type": "nation",
+	"categories": {
+		"city-state": [ "City-State","City-States" ],
+		"country": [ "Country","Countries" ],
+		"colony": [ "Colony","Colonies" ],
+		"empire": [ "Empire","Empires" ],
+		"kingdom": [ "Kingdom","Kingdoms" ],
+		"free-city": [ "Free City","Free Cities" ],
+		"duchy": [ "Duchy","Duchies" ],
+		"autonomous-region": [ "Autonomous Region","Autonomous Regions" ],
+		"region": [ "Region","Regions" ],
+		"state": [ "State","States" ],
+		"district": [ "District","Districts" ],
+		"lordship": [ "Lordship","Lordships" ],
+		"county": [ "County","Counties" ],
+		"principality": [ "Principality","Principalities" ],
+		"tribe": [ "Tribe","Tribes" ],
+		"province": [ "Province","Provinces" ],
+		"archduchy": [ "Archduchy","Archduchies" ],
+		"canton": [ "Canton","Cantons" ],
+		"borough": [ "Borough","Boroughs" ],
+		"unincorporated-territory": [ "Unincorporated Territory","Unincorporated Territories" ],
+		"territory": [ "Territory","Territories" ],
+		"community": [ "Community","Communities" ],
+		"viscounty": [ "Viscounty","Viscounties" ],
+		"overseas-territory": [ "Overseas Territory","Overseas Territories" ],
+		"overseas-department": [ "Overseas Department","Overseas Departments" ],
+		"municipality": [ "Municipality","Municipalities" ],
+		"prefecture": [ "Prefecture","Prefectures" ],
+		"free-state": [ "Free State","Free States" ],
+		"area": [ "Area","Areas" ],
+		"zone": [ "Zone","Zones" ],
+		"emirate": [ "Emirate","Emirates" ],
+		"sultanate": [ "Sultanate","Sultanates" ],
+		"manor": [ "Manor","Manors" ],
+		"precinct": [ "Precinct","Precincts" ],
+		"protectorate": [ "Protectorate","Protectorates" ],
+		"parish": [ "Parish","Parishes" ],
+		"commune": [ "Commune","Communes" ],
+		"constituency": [ "Constituency","Constituencies" ]
+	},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Motto": {
+			"label": "",
+			"preText": "<b>Motto: </b>",
+			"wide": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Capital and Largest City": {
+			"label": "<span>Capital</span><span class='wv-small'> (and Largest City)</span>"
+		},
+		"Capital": {},
+		"Largest city": {},
+		"Region": {},
+		"Demonyms": {},
+		"Established": {},
+		"Established Event": {},
+		"Independence": {},
+		"Preceded By": {},
+		"Era": {},
+		"Dissolution": {},
+		"Dissolution Event": {},
+		"Succeeded By": {},
+		"Ruled By": { "tag": "ruled_by" },
+		"Head of State": {},
+		"Head of Government": {},
+		"Government Type": {},
+		"Government": {},
+		"Power System": {},
+		"Parent Organization": { "tag": "parent_org" },
+		"Alliances": {},
+		"Unions": {},
+		"Member Of": { "tag": "member_of" },
+		"Allied With": {},
+		"Enemies Of": {},
+		"In War With": {},
+		"Notable Dates": {},
+		"Official Languages": {},
+		"National Languages": {},
+		"Regional Languages": {},
+		"Writing Systems": {},
+		"Ethnic Groups": {},
+		"Official Religions": {},
+		"Religions": {},
+		"National Symbols": {},
+		"Population": { "tag": "population" },
+		"Currency": {},
+		"Timezone": {},
+		"Area": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Nation general description with details on location and divisions. With other prominent/notable general details?"
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"Geography": {
+			"prompt": "What is the overall geography? Any notable locations?",
+			"list": {
+				"Climate": {
+					"prompt": "What does the climate look like? Rain/Temperature/Snow/Tides/Wind/Radiation/... Is it changing? Are there recurrent climate events (tornadoes,volcanoes,floods,...)? Are there different climate regions?"
+				},
+				"Biodiversity": {
+					"prompt": "How diversity is the fauna and flora? Are they under treat? Were any drove to extinction? Relation with agriculture/industry/infrastructure? Are habitats preserved? Is there education? Is there zoos/botanical parks/forests/sanctuaries/national parks/...?"
+				},
+				"Topography": {
+					"prompt": "Terrain/Mountains/Ranges/Deserts/Seismic/Volcanoes/..."
+				},
+				"Hydrography": {
+					"prompt": "Rivers/Lakes/Oceans/Seas/Islands/..."
+				},
+				"Natural Resources": {
+					"prompt": "What resources are present within? Is there scarcity or surplus?"
+				}
+			}
+		},
+		"History": {
+			"prompt": "What are some notable historical events? Colonization/Independence/Indigenous people/Expansion/Conquest/Regime Changes/Coups/...",
+			"list": {
+				"Evolution": {
+					"prompt": "How old is your nation?\nDo they have common ancestors? If so, are they extinct? Are they equal in development? \nWhere on the planet did your nation originate?\nWas there any outside influence to their evolution?\nWere they divinely created?"
+				},
+				"War and Conflict": {
+					"prompt": "Have there been any wars?\nWhat have been the common attributes to the starting of wars?\nHave other Nations been destroyed or subjugated?"
+				},
+				"Migration": {
+					"prompt": "Does your nation migrate across the planet? If so, what determines this migration? Is migration Seasonal, Cultural, Spiritual?\nAre they Sedentary (Stay in one place)?"
+				},
+				"Disasters": {
+					"prompt": "What disasters has your nation experienced?\nWere there any extinction level events?\nWas there an Apocalypse?"
+				},
+				"Stories & Myths": {
+					"prompt": "What stories are frequently told?\nWhat stories are used to shape the youth?\nWhat myths shape the culture? (for example to reinforce their skepticism or war like behaviour)\nWhat key events occurred?"
+				}
+			}
+		},
+		"Government": {
+			"prompt": "How large is the government? How influential is it? How is it viewed by the populace? How is it viewed by nobility/oligarchs/...?\nHow does your nation govern themselves?\nIs there a central government? If so, who is in charge? How are they appointed?\nDoes this government allow anyone to govern?\nDo people pay their government in taxes, in labour, in crops, in military service? \nHow is succession determined?\nIs there an heir apparent (either actual or political)?\nWhat happens if the heir is a child?",
+			"list": {
+				"Politics": {
+					"prompt": "Who has the right to levy taxes?\nHow are the people with the power to give orders chosen?\nWho provides support services for the head of state and what are they called (examples: councilors, ministers, secretaries, viziers)?\nWho is responsible for protecting the head-of-state?\nWhat safeguards does the head-of-state have against assassins, poison, assault, and magical attack?\nAre any activities licensed or certified (driving, dog ownership, being an attorney or a physician)? \nWho does the certification or licensing? \nIs it merely formal (pay a fee, and get a license), or are there qualifications to meet?\nCan licenses or certifications be revoked, and if so, how?\nHow much influence do special interest groups (such as merchants, wizards, or religious sects) have on politics?\n What political positions are considered conservative?\nWhat political positions are considered liberal? \nAre there political positions that are unthinkable?\nDoes your nation have a constitution? If so, what does this constitution contain?\nWhat rights does your nation have? Are some rights reserved for certain members of society?\nIs there any form of free expression, freedom of speech, freedom of movement, etc?\nAre there political parties? What are the major political factions at present? How long have the current political factions been around?"
+				},
+				"Law and Judicial System": {
+					"prompt": "What are considered normal and legal ways of gathering evidence and determining guilt?\nAre torture and magic part of the legal system?\nAre arbitrary judgements by a lord or landowner allowed, or is there a standard that they are supposed to follow? \nIs there an appeal system?\nIs everyone tried in the same courts or are there special courts for special classes of people — for example, are mages tried in specialized wizard’s court?\n Are there separate courts for civil and criminal matters? Magical and non-magical matters? Of nation and outsiders? Religious matters?\nWhat things are considered truly serious crimes and why?\nWhat are the punishments for serious versus minor crimes?\nAre there prisons, or are people punished and released?\nAre there degrees of punishment such as fines, branding, public whippings, removal of body parts, executions — or do they just hang everybody regardless of the crime?\nWho is responsible for catching criminals?\nAre there independent precincts, overlapping districts, or separate jurisdictions?\nCan law enforcement be hired?\nAre there lawyers or advocates?\nWho can afford legal representation? \nAre people guilty until proven innocent, innocent until proven guilty, or does it depend on the mood the bench is in when the case comes in front of it?\nAre there assumptions made about how an accused criminals will be treated?\nAre there judges other than the nobles or gentry?\nIs mob justice common? Is it legal?\nHow is mob justice viewed by society? \nAre highwaymen, muggers, bandits, or pirates common or rare?\nWhat sorts of crimes would the average citizen be likely encounter in their lifetime?\nWho can make or repeal laws?\nAre there laws forbidding certain types of people (peasants, wizards, priests, women) from carrying arms?\nAre there laws requiring certain people to be skilled with certain weapons?\nAre certain spells (as opposed to magic generally) illegal?\nHow would a criminal magician be detected? Apprehended? Punished?"
+				},
+				"Public Services": {
+					"prompt": "What services does the government or head-of-state provide?\nAre schools, wells, courts, and the army paid for by taxes?\nWhat services do people expect from their government?"
+				},
+				"Civil Organisations": {
+					"prompt": "Are there worker unions, civil rights groups, etc?\nHow are these groups regarded by the governing authority?\nAre protests common? Can revolutions occur?"
+				},
+				"Foreign Relations": {
+					"prompt": "What are the relationships with other nations like? What is the current and historical foreign stance?\nAre there multiple governments on your world? If so, how do they interact?\nIs there a global council of world governments?\nHow do nations communicate with each other?\nWhich nations have formal relations with other countries?\nWho can be ambassadors and envoys?\nAre there standing embassies and consulates, or are envoys sent only when something specific comes up?\nHow are treaties arranged?\nAre there any significant ones currently in force or coming up for signing?\nHow much do official attitudes toward other countries affect commerce and trade?\nDo merchants pretty much ignore tensions between governments as long as they can make a profit, or will this get them into trouble?\nHow much formal spying and intelligence gathering is normally done by governments?\nHow much spying is done by the military?\nDo merchants (or companies) engage in espionage?\nWho has the best information gathering system?\nWhich countries are traditional allies?\nWhich countries are traditional rivals?\nHow do these traditional alliances and rivalries affect foreign policy?\nWhich heads-of-state are related by blood or marriage?\nHow important are political marriages?\nHow do ties of blood and marriage affect foreign policy?"
+				},
+				"Administrative Divisions": {
+					"prompt": "How is the government divided? Who controls what? Is control tied with family/age/popularity/knowledge/...? What are some regional divisions and their administrative structure?"
+				}
+			}
+		},
+		"Military": {
+			"prompt": "How well known is it? How well funded? How powerful and intimidating? How does morale influence the military?",
+			"list": {
+				"Structure": {
+					"prompt": "How structure is the military? Are there special forces? Are there air/sea/land/... divisions? Are there units and divisions? Who control those? The chain of command? Are militias used and how often?"
+				},
+				"Weapons and Tactics": {
+					"prompt": "What weapons are used? What armor is used? What equipment is used? What tactics are used? What vehicles or siege weapons are used? Are divisions based on weapons?\nHow are these weapons made?\nWho are allowed to carry these weapons?\nDoes your nation wear armour? If so, what is it made from? How much of their body does it cover? How effective is it against different attacks?\nHow does your nation defend its cities?\nAre there armies? If so, how are soldiers recruited? Is there a form of draft, military service, etc?\nWho in in command of the army? What is the chain of command?\nAre there mercenary groups/militias?"
+				},
+				"Rules of Engagement": {
+					"prompt": "Does your nation have specific tactics?\nCan your nation show mercy? Do they take prisoners?\nAre unarmed civilians considered fair-game?\nIs total destruction a standard military action?"
+				},
+				"Conflicts": {
+					"prompt": "What are some previous and/or current conflicts/wars? With whom? Why?\nHas there been any recent wars? Who won?\nAre there ongoing tensions from the most recent war?"
+				},
+				"Alliances and Treaties": {
+					"prompt": "What are some previous and/or current alliances/treaties? With whom? Why? How important are those?\nIs there a form of oath keeping? Bannermen, Blood debts, honour-bound, etc?\nWhat alliances are there in your world? Who are they in these alliances?\nAre there smaller factions within these Alliances? If so, Is there political intrigue?"
+				}
+			}
+		},
+		"Economy": {
+			"prompt": "Is the economy developed? Is it a relevant/prominent topic? What sectors are most relevant? How has it developed historically? Any event of relevance (like an industrial revolution or innovation or discovery)?",
+			"list": {
+				"Taxation": {
+					"prompt": "Is there taxation? How does it work? How is it received?"
+				},
+				"Financial Organisations": {
+					"prompt": "Are there banks? If so, do they provide loans, bookkeeping, Worker pensions etc?\nIs there a centralised banking system or are they independent?\nIs there any form of financial regulation? Is Cronyism standard practice?"
+				},
+				"Currency": {
+					"prompt": "Is there a local currency? Is it physical? What do the coins look like? Are there notes? What is it made of? Is it based on another currency? Is it standardized?"
+				},
+				"Trade and Transport": {
+					"prompt": "How does trade work? Is it a barter system? Is there international trade? How does transportation of goods work? By what means does it work? Are there trade organizations and/or regulations? Is there a class that dedicates itself to trade?\nHas your nation invented the wheel?\nDoes your nation have motorised transport? If so, what fuels them?\nAre animals used as a form of transport?\nAre there aircraft? If so, what do they looks like? How do they function?\nIs sailing a form of transport that your nation uses?\nAre there magical means of transportation?\nHow available is water transportation?\nHow common is travel? How dangerous is travel?\nDoes the concept of travelling just “to see the world” or for fun even exist?\nAre there good roads?"
+				},
+				"Tourism": {
+					"prompt": "Is there tourism? How prolific is it? What areas/locations are often visited? Is there religious/educational/eco/scientific/creative/seasonal tourism? Is tourism domestic or more widespread?"
+				},
+				"Agriculture and Industry": {
+					"prompt": "Is there a prominent agriculture field? What is cultivated? What livestock is used and for what? Is rotation/pesticides/genetic modification/selective breeding/... used? Is there water issues? Is there an active industrial sector? What is produced? Who is the workforce? Are there safety/monetary/environment/investment problems? Has your nation domesticated any animals? For food, materials, protection, etc?\nDoes your nation have pets? If so, what animals are considered pets?\nAre there animal livestock?\nDoes your nation have consumerism/commercialisation?\nCan your nation own businesses? Are there consumer franchises?\nIs there industry in your world? Are there factories?\nHow much power are corporations allowed to have? Are there mega-corporations that control nations/planets?"
+				},
+				"Imports and Exports": {
+					"prompt": "What goods are exchanged? Is there any well known regional/national products? Are there restrictions? Are there tariffs/licenses/quotas/barriers? Are there controlling organizations/bodies? Is there smuggling ans is it a problem? What policies are relevant?"
+				}
+			}
+		},
+		"Science and Technology": {
+			"prompt": "Are there prominent science and/or technological fields? How is science conducted and by who? Are there policies/grants/investment/research related to science and technology? How does tech influence daily affairs? Is there any famous innovations or innovators?",
+			"list": {
+				"Science": {
+					"prompt": "Does your nation use science?\nDoes your nation use Mathematics? If so, what number base do they use?\nDoes your nation use Chemistry, Computing, Robotics, etc?\nAre there unique subjects of science that your nation has developed?\nHow much is known about the laws of nature, physics, and magic?\nHow much of what is commonly known is factually wrong?"
+				},
+				"Units of Measurement": {
+					"prompt": "How does your nation measure Length, Distance, Weight, Time, etc?\nHow does it compare with other systems like Meters, Inches, Miles, etc?\nHow are these units determined? Are they standardised?"
+				},
+				"Tools": {
+					"prompt": "What types of tools does your nation use?\nAre there special/unique tools? If so, what do these tools look like? How are they used?\nAre these tools manual or powered? If they are powered, what fuels their power?\nIn what areas might magic replace technology?"
+				},
+				"Medicine & Surgery": {
+					"prompt": "What types of Medicine does your nation use? Herbal, Synthetic, Chemical?\nDoes your nation practice Surgery? Is it part of a centralised healthcare system, or performed by independent doctors/healers?\nCan your nation modify their bodies using cybernetic prosthetics? Are there any limitations linked to them? Cumbersome power supply, Body rejection, Social stigma?\nWho are the healers? Do you have to have a talent to heal? Who can become a healer?\nWho trains healers, herbalists, apothecaries, surgeons, magical and non-magical?\nHow available are such services to ordinary people?\nHow much is known about anatomy, physiology, pathology, psychology, and so on?\nAre treatments based on purely practical experience, or do healers understand at least some of what they are doing?\nIs healing generally a magical process?\nWhat kinds of treatments are available and how effective are they?",
+					"list": {
+						"Birth": {
+							"prompt": "Is there a reliable method of birth control?\nWho normally handles births?\nWhat is the maternal mortality rate? The infant mortality rate?"
+						},
+						"Death": {
+							"prompt": "Is it possible to resurrect or resuscitate someone who has died?\nIf revival is possible, how long is it before it becomes impossible, or before serious brain damage sets in?"
+						},
+						"Insanity": {
+							"prompt": "How is insanity treated?\nAre there asylums or treatment centres?\nHow effective are treatments for insanity?"
+						}
+					}
+				},
+				"Communication": {
+					"prompt": "How are messages sent when necessary?\nIs there a public or private postal system, or does everyone of importance have to send messengers?\nAre there magical means of communication? How common and reliable are they? How expensive?\nHow do people find out what is happening in the world?"
+				},
+				"Timekeeping": {
+					"prompt": "How is time kept?\nWhat units are time kept in? Hours, Minutes, or something else?\nIs there a specific device for keeping time? Clock, Candle, Sundial, etc?\nAre there different methods of timekeeping across different world cultures?"
+				}
+			}
+		},
+		"Infrastructure": {
+			"prompt": "How good and maintained is the infrastructure? Are there big projects underway or already existent? How is infrastructure development distributed to various areas?",
+			"list": {
+				"Cities and Urbanization": {
+					"prompt": "Is the nation generally urbanized? What does the infrastructure look like? What are common features in cities?",
+					"Largest Cities": { "nav_link": { "type":"settlement", "link":"parent_location", "on":"population::top(10)" } }
+				},
+				"Building Materials": {
+					"prompt": "What does your nation make their buildings out of?\nWhat common materials does your nation have access to?\nAre there any materials that your nation cannot use/make?"
+				},
+				"Rural": {
+					"prompt": "How different are rural areas? Is there a class division? Are they poorer/less infrastructure?"
+				},
+				"Nature": {
+					"prompt": "How is nature treated? Are there environmental concerns?"
+				}
+			}
+		},
+		"Society": {
+			"prompt": "How relevant is Society and unity? Are social rules strictly defined or generally accepted?",
+			"list": {
+				"Demographics": {
+					"prompt": "Is there a population boom? Is there an age problem (too many young or too many old or a tendency towards either? How is gender structured? Is there a disproportionate distribution?"
+				},
+				"Class System": {
+					"prompt": "Is there a class system in your society? If so, what style is this system?\nIs there a form of discrimination or segregation? If so, how is it justified?\nDoes this system allow for class movement? Can the lower class become upper class?"
+				},
+				"Education": {
+					"prompt": "What is the state of the education? Are people literate? Are people educated? Is there a social gap? Is there higher education?\nDoes your nation have an organised education system? If so, at what age does your nation enter this system?\nDoes this system bestow any form of status? Is education considered a privilege, a right, or something to avoid?"
+				},
+				"Health": {
+					"prompt": "What is the state of the health and healthcare? Are people healthy? Is there a social gap?"
+				},
+				"Values & Ethics": {
+					"prompt": "What does your nation consider fundamentally important? Family, Freedom, Peace, Education, etc?\nWhat does your nation consider Right or Wrong?\nDo your nation have Charity?\nWhat is their opinion on Killing/Accidental Death?\nAre acts such as Lying, Cheating, Fraud deemed acceptable?\nIs there slavery?"
+				},
+				"Religion": {
+					"prompt": "What religions are practiced? Are there official religions? Are there oppressed religions?\nViews on Afterlife, Heaven & Hell, Origin of the Soul, Burial, Superstitions and Genesis & Creation?"
+				},
+				"Languages": {
+					"prompt": "What languages are spoken? Are there official languages? Are there minority languages?"
+				},
+				"Citizenship": {
+					"prompt": "Is it given at birth? Can you have it by descent? Can you have multiple? Can you have naturalization, when?"
+				},
+				"Punishment": {
+					"prompt": "Is punishment always lawful? Is there public punishment? Are matters treat in family or in group?"
+				},
+				"Minority Groups": {
+					"prompt": "Are there minority groups? Do they have representation? Are they oppressed? How are they viewed?"
+				},
+				"Migration": {
+					"prompt": "Is there an influx of people going in and/or out? Are there migration problems? Are people leaving? "
+				},
+				"Beauty Standards": {
+					"prompt": "What does your nation regard as beautiful?\nDoes your nation use cosmetics?\nDoes society have any expectations in regards to beauty/appearance? Are these expectations related to Age, Gender, Class, etc?\nDoes clothing and jewellery relate to beauty?"
+				},
+				"Relationships": {
+					"prompt": "How is sexual orientation defined?\nCan your nation have friends? If so, how do they make friends? Who can be their friends?\nHow does your nation acquire a mate?\nAre there any intricacies to courting?\nHow is marriage viewed? Does it exist? Is it expected?\nAre they free to match with one another or is matching made by an authority (for example family)?\nWhen do individuals become adults? Is there a rite of passage?"
+				},
+				"Family": {
+					"prompt": "What part does family play in society? Is there a relation to power based on family? Is marriage expected? Is interracial relations/intimacy frowned upon? How does family tie in with parenthood? How is parenthood/household/family responsibilities divided? Is divorce allowed or badly viewed? Who raises children?"
+				},
+				"Gender Roles": {
+					"prompt": "Are there separate attitudes regarding gender?\nDo sons/daughters get married off?\nWho is regarded as the prime parent?\nAre there particular jobs/activities reserved for only one gender?\nDo extra benefits get granted to one particular gender?"
+				},
+				"Etiquette": {
+					"prompt": "Does your nation have a particular attitude towards eating? Do servants eat last? Do they make a toast or pray before eating?\nDoes your nation eat their meals in a specific order?\nAre there standard greetings and farewells?\nAre certain gestures considered rude?\nAre there common salutations? Sir, Madam, Master, etc?"
+				},
+				"Clothing and Apparel": {
+					"prompt": "What does your nation commonly wear? Are there different items of clothing?\nDo different styles of clothing have specific meanings? Wedding dresses, Priest's vestments, etc?"
+				},
+				"Jewellery and Tattoos": {
+					"prompt": "Does your nation wear jewellery? If so, where do they commonly wear them?\nDo tattoos/body paint have specific cultural significance?\nHow is the jewellery made? What is it made from? Does jewellery correlate with social class?"
+				},
+				"Cooking & Brewing": {
+					"prompt": "What types of culinary practises does your nation have?\nDoes your nation produce Alcohol? Is the Prohibition?\nWhat unique recipes does your nation have?"
+				},
+				"Narcotics": {
+					"prompt": "Does your nation have any form of drugs? Are these drugs a problem in their society?\nWhat are the effects? Are they recreational or harmful?\nIs there a social stigma attached to its use?\nAre drugs used as a combat aid? Do these drugs enhance any abilities?"
+				}
+			}
+		},
+		"Art and Culture": {
+			"prompt": "Cultural Influences, Cultural Divides, Historical Relation and Cultural Outline",
+			"list": {
+				"Arts and Literature": {
+					"prompt": "How is art reflected in society? Are there patrons? Are there any movements? Relevance in education? Skill and craft? What are its influences? Is art accompanied in other facets of society?"
+				},
+				"Philosophy": {
+					"prompt": "Importance of philosophy? Is it practiced? Are there specific philosopher or those that practice have other occupations? Are there patrons? Which philosophical types are embraced? Underground movements?"
+				},
+				"Music and Dance": {
+					"prompt": "Influences? Common instruments, genres and dance styles? Any regional/national symbols? Roles of pitch/melody/harmony/rhythm/texture/timbre/expression/form? In Education? Reflection of society (like music created from dark times or from a happy outlook)?"
+				},
+				"Architecture": {
+					"prompt": "What does the tradition architecture look like? Is it widespread or with regional differences? What are its influences? Historical? Neighbors? Does architecture extend to public facilities/parks/landscape/interior/disaster prevention/water integration?"
+				},
+				"Ethics": {
+					"prompt": "Is there a prevailing concept of right and wrong behaviour? Are there ethics in medicine/war/politics/animal/tech/science/business?"
+				},
+				"Food and Cuisine": {
+					"prompt": "What are some typical foods? What are some common ingredients? Is food shaped by culture/history/neighbors? Is it shaped by current or historical wars/famines/poverty? Condiments/Spice/Meals/Meal Structure/Drinks/Alcohol/Narcotics/Sweets/Salt/Nutrition/Obesity?"
+				},
+				"Media": {
+					"prompt": "Is media access widespread? In what forms? Do people hear of nacional news? And world news? Is media controlled/censored/altered/propagandized/blocked? What is the level of trust in media?"
+				},
+				"Sports": {
+					"prompt": "What sports are practiced? How widespread are these? Any interconnection with other places? Are these socially divided? Does everyone play? Do children have rough versions of these (like cloth balls)?"
+				},
+				"Holidays and Festivals": {
+					"prompt": "Often celebrated holidays and festival? Cultural importance of these? Seasonal? Religious? Historical? Reenactments? Arts?"
+				}
+			}
+		},
+		"Magic": {
+			"prompt": "",
+			"list": {
+				"Society View": {
+					"prompt": "How do various religions view magic? Do any require or forbid priests to practise magic?\nIs Magic outlawed or viewed skeptically?\nAre there legal limits to the use of magic?\nAre magical users praised?\nIs magical pursuit an oddity?\nDo some positions require that their holder be a wizard?\nHow has the presence of magic and magicians affected law and government?"
+				},
+				"Source of all Magic": {
+					"prompt": "Where does the Magical energy originate? Is it a natural phenomenon?\nIs Magic infinite or a finite resource? Does it get weaker the more it is used?\nCan all members of your nation use magic? Is Magic dependant on intelligence?"
+				},
+				"Magic Archetypes": {
+					"prompt": "Are there multiple forms of Magic? Fire, Ice, Light, Dark, etc?\nAre there different institutions for different archetypes of Magic? Schools/Colleges, Arcane University, etc?"
+				},
+				"Magic Applications": {
+					"prompt": "Does Magic replace/override Technology? Are the two interchangeable?\nIs Magic the preferred method of healing and/or combat?\nAre there any restrictions put in place for Magic use? If so, who enforces these restrictions?"
+				}
+			}
+		}
+	}
+}

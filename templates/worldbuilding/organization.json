@@ -1,0 +1,193 @@
+{
+	"links": true,
+	"title": "Organization Name",
+	"type": "organization",
+	"categories": {
+		"association": [ "Association","Associations" ],
+		"order": [ "Order","Orders" ],
+		"sect": [ "Sect","Sects" ],
+		"cult": [ "Cult","Cults" ],
+		"company": [ "Company","Companies" ],
+		"church": [ "Church","Churches" ],
+		"faction": [ "Faction","Factions" ],
+		"militia": [ "Militia","Militias" ],
+		"organization": [ "Organization","Organizations" ],
+		"group": [ "Group","Groups" ],
+		"gang": [ "Gang","Gangs" ],
+		"band": [ "Band","Bands" ],
+		"federation": [ "Federation","Federations" ],
+		"confederation": [ "Confederation","Confederations" ],
+		"crew": [ "Crew","Crews" ],
+		"coalition": [ "Coalition","Coalitions" ],
+		"team": [ "Team","Teams" ],
+		"club": [ "Club","Clubs" ],
+		"cooperative": [ "Cooperative","Cooperatives" ],
+		"guild": [ "Guild","Guilds" ],
+		"league": [ "League","Leagues" ],
+		"union": [ "Union","Unions" ],
+		"partnership": [ "Partnership","Partnerships" ],
+		"tribe": [ "Tribe","Tribes" ],
+		"clan": [ "Clan","Clans" ],
+		"alliance": [ "Alliance","Alliances" ],
+		"fraternity": [ "Fraternity","Fraternities" ],
+		"assembly": [ "Assembly","Assemblies" ],
+		"squad": [ "Squad","Squads" ],
+		"ministry": [ "Ministry","Ministries" ],
+		"executive": [ "Executive","Executives" ],
+		"house": [ "House","Houses" ],
+		"institution": [ "Institution","Institutions" ],
+		"foundation": [ "Foundation","Foundations" ],
+		"commonwealth": [ "Commonwealth","Commonwealths" ],
+		"pact": [ "Pact","Pacts" ],
+		"council": [ "Council","Councils" ],
+		"community": [ "Community","Communities" ]
+	},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Motto": {
+			"label": "",
+			"preText": "<b>Motto: </b>",
+			"wide": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Capital and Largest City": {
+			"label": "<span>Capital</span><span class='wv-small'> (and Largest City)</span>"
+		},
+		"Capital": {},
+		"Largest city": {},
+		"Headquarters": {},
+		"Region": {},
+		"Demonyms": {},
+		"Type": {},
+		"Members": {},
+		"Structure": {},
+		"Official Languages": {},
+		"Writing Systems": {},
+		"Ethnic Groups": {},
+		"Official Religions": {},
+		"Religions": {},
+		"Founding": {},
+		"Founded By": {},
+		"Founding Event": {},
+		"Preceded By": {},
+		"Era": {},
+		"Dissolution": {},
+		"Dissolution Event": {},
+		"Succeeded By": {},
+		"Parent Organization": {},
+		"Ruled By": { "tag": "ruled_by" },
+		"Products/Services": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Organization general description with details on location, members and divisions. With other prominent/notable general details?"
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"History": {
+			"prompt": "What is the History of the Organization? Why was it created? Is it growing? Any notorious dates or events?"
+		},
+		"Structure": {
+			"prompt": "What is the Structure of the Organization? How is it divided? Who has power?"
+		},
+		"Geography": {
+			"prompt": "What is the overall geography? Any notable locations?",
+			"list": {
+				"Climate": {
+					"prompt": "What does the climate look like? Rain/Temperature/Snow/Tides/Wind/Radiation/... Is it changing? Are there recurrent climate events (tornadoes,volcanoes,floods,...)? Are there different climate regions?"
+				},
+				"Biodiversity": {
+					"prompt": "How diversity is the fauna and flora? Are they under treat? Were any drove to extinction? Relation with agriculture/industry/infrastructure? Are habitats preserved? Is there education? Is there zoos/botanical parks/forests/sanctuaries/national parks/...?"
+				},
+				"Topography": {
+					"prompt": "Terrain/Mountains/Ranges/Deserts/Seismic/Volcanoes/..."
+				},
+				"Hydrography": {
+					"prompt": "Rivers/Lakes/Oceans/Seas/Islands/..."
+				},
+				"Natural Resources": {
+					"prompt": "What resources are present within? Is there scarcity or surplus?"
+				}
+			}
+		},
+		"Demographics": {
+			"prompt": "How diverse/populous is this Organization?",
+			"list": {
+				"Education and Research": {
+					"prompt": "What is the state of the education? Are people literate? Are people educated? Is there a social gap? Is there higher education?"
+				},
+				"Health": {
+					"prompt": "What is the state of the health? Are people healthy? Is there a gap?"
+				},
+				"Religion": {
+					"prompt": "What religions are practiced? Are there official religions? Are there oppressed religions?"
+				},
+				"Minority Groups": {
+					"prompt": "Are there minority groups? Do they have representation? Are they oppressed? How are they viewed?"
+				},
+				"Languages": {
+					"prompt": "What languages are spoken? Are there official languages? Are there minority languages?"
+				},
+				"Punishment": {
+					"prompt": "Is punishment always lawful? Is there public punishment?"
+				}
+			}
+		},
+		"Operations": {
+			"prompt": "What are the aims of the Organization? What does it do?",
+			"list": {
+				"Military": {
+					"prompt": "Any military involvements? What is its view on military action and is it involved in any?"
+				},
+				"Infrastructure": {
+					"prompt": "Does this Organization provide or work in infrastructure?"
+				},
+				"Locations": {
+					"prompt": "Where does this organization operate? Is it expanding operations?"
+				},
+				"Environment": {
+					"prompt": "What is the environmental relationship for this organization?"
+				}
+			}
+		},
+		"Membership": {
+			"prompt": "What are the requirements for Membership? Are they thorough? Difficult? Extensive? Are new members added often or rarely if ever?",
+			"list": {
+				"Special Arrangements": {
+					"prompt": "Are members equal or do some have special arrangements following membership?"
+				},
+				"Enlargement": {
+					"prompt": "What are the views of current members towards enlargement? Are new additions seen as equals?"
+				}
+			}
+		},
+		"Partnerships": {
+			"prompt": "Are partnerships common? What do those look like? Is anything expected from this partnerships?"
+		},
+		"Products and Services": {
+			"prompt": "What products and/or services does this organization provides?"
+		},
+		"Art and Culture": {
+			"prompt": "Cultural Influences, Cultural Divides, Historical Relation and Cultural Outline"
+		},
+		"Criticism and Controversies": {
+			"prompt": "What are some criticism mad towards this organization?"
+		},
+		"Influence": {
+			"prompt": "Is this Organization influente? How is it viewed?"
+		}
+	}
+}

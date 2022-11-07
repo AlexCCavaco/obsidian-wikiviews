@@ -1,0 +1,171 @@
+{
+	"links": true,
+	"title": "Sapient Species Name",
+	"type": "sapient-species",
+	"categories": {},
+	"data": {
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Kingdom": "",
+		"Phylum": "",
+		"Class": "",
+		"Order": "",
+		"Superfamily": "",
+		"Family": "",
+		"Genus": "",
+		"Species": "",
+		"Region": {},
+		"Notable Dates": {},
+		"Population": { "tag": "population" },
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Sapient Species Overall Description."
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"History": {
+			"prompt": "What is the history of the species?",
+			"list": {
+				"Evolution": {
+					"prompt": "How old is your species?\nDo they have common ancestors? If so, are they extinct? Are they equal in development? \nWhere on the planet did your species originate?\nWas there any outside influence to their evolution?\nWere they divinely created?"
+				},
+				"War and Conflict": {
+					"prompt": "Have there been any wars?\nWhat have been the common attributes to the starting of wars?\nHave other Species/Nations been destroyed or subjugated?"
+				},
+				"Migration": {
+					"prompt": "Does your species migrate across the planet? If so, what determines this migration? Is migration Seasonal, Cultural, Spiritual?\nAre they Sedentary (Stay in one place)?"
+				},
+				"Disasters": {
+					"prompt": "What disasters has your species experienced?\nWere there any extinction level events?\nWas there an Apocalypse?"
+				},
+				"Stories & Myths": {
+					"prompt": "What stories are frequently told?\nWhat stories are used to shape the youth?\nWhat myths shape the culture? (for example to reinforce their skepticism or war like behaviour)\nWhat key events occurred?"
+				}
+			}
+		},
+		"Physiology": {
+			"prompt": "What does this species look like? Any outstanding characteristics?",
+			"list": {
+				"Body Characteristics": {
+					"prompt": "Does your species have opposable thumbs?\nWhat is their average height and weight?\nHow many arm/legs does your species have?\nDo they have multiple jointed limbs?\nDo they have tails, claws, mandibles, wings, etc?\nWhat are the common colours of their eyes, hair, skin, etc?\nHow do they move? (walk, slither, jump, etc)"
+				},
+				"Physical Capabilities": {
+					"prompt": "Does your species body allow for enhanced abilities? Climbing, flying, swimming, etc?\nAre they Telepathic/Telekinetic?\nAre they very strong? Can they move fast? Can they jump extremely high?\nIf they have a tail, is it prehensile?"
+				},
+				"Physical Limitations": {
+					"prompt": "Does your species struggle with particular physical activities?\nIs their bone structure weak/fragile?\nDoes the shape/function of their hands affect their ability to grasp objects?\nDoes the shape of their mouths make it difficult to eat, or drink fluids?\nAre certain body parts too large, small, heavy, etc, to be comfortable?"
+				}
+			}
+		},
+		"Biology": {
+			"prompt": "",
+			"list": {
+				"Biological Characteristics": {
+					"prompt": "What colour is your species' blood? \nHow does their DNA determine their physical characteristics?\nIs there Sexual Dimorphism?\nHow old can your species get? Are they Immortal?\nDo they have some form of natural camouflage? Can they control their pigmentation?\nIs there biological variation? (blood type, genetic diseases, cranial features, facial features, organ systems, eye color, hair color and texture, height and build, and skin color)"
+				},
+				"Diet and Nutrition": {
+					"prompt": "What does your species eat? Are they Herbivores, Carnivores, or Omnivores?\nAre they Cannibalistic?\nIs there a particular food substance that is harmful/deadly to them?\nWhat is their average daily calorie intake?"
+				},
+				"Disease and Immune System": {
+					"prompt": "Are there any viruses or pathogens that plague the world?\nAre they more or less prone to disease?\nDo they have any inherited immunities?\nHow strong is your species' Immune system? Do they even have one?\nAre they carriers of a disease that can affect other species?\nHow are diseases treated? Do they have/use medicine?\nDo they understand gemmology?\nCan they have some form of animal or plant based allergies?"
+				},
+				"Reproduction": {
+					"prompt": "How many genders exist?\nHow do your species procreate?\nDoes your species rely on Egg & Sperm cells? Or use other methods of impregnation?\nHow long does pregnancy last?\nHow does your species give birth? Live young , Egg laying, Pupa Larvae?"
+				}
+			}
+		},
+		"Psychology": {
+			"prompt": "",
+			"list": {
+				"Sleep and dreaming": {
+					"prompt": "Do they sleep? How often and for how long (generally)?\nAre they diurnal, noctural, ...?\nIs sleep a requirement? Can they suffer from sleep deprivation?\nDo they dream? How does this factor change their daily lifes, if at all?"
+				},
+				"Consciousness and Thought": {
+					"prompt": "How smart is your species? Are they sentient? Sapient?\nAre they self-aware?\nAre they adept are particular subjects, such as Mathematics, Diplomacy, problem solving, etc?\nHow do they rank their own intelligence to that of others? Does their IQ grant them a sense of superiority/Inferiority?\nHow easily do they learn? Do they learn better by experiencing, practicing, reading...?"
+				},
+				"Motivation and Emotion": {
+					"prompt": "Do they feel emotion?\nHow do they perceive those emotions?\nDo they characterize them as pleasant and unpleasant?\nWhat motivates them?\nDo they have a clear hierarchy of needs?"
+				},
+				"Sexuality and Love": {
+					"prompt": "How is sexuality defined in the terms of their biological, erotic, physical, emotional, social, or spiritual feelings and behaviors?\nDo they practice any abstinence?\nDo they experience emotional attachment?\nDo those experiences include familial, platonic and/or romantic love?"
+				},
+				"Humour": {
+					"prompt": "Does your species have a sense of humour? If so, what do they find humorous?\nDo they have a dedicated profession for humour? (Comedians, Jesters, etc)\nWhat kinds of humour does your species not enjoy?"
+				},
+				"Mental Health": {
+					"prompt": "Can your species suffer Mental disabilities? If so, what are they?\nCan your species be born with Mental disorders, such as Down's Syndrome, Autism, Bipolar Disorder, Multiple Personalities, etc?\nDoes the Mental health of your species worsen with age?\nWhat is your society's reaction to the mentally disabled? Are they cared for or are they discarded?"
+				}
+			}
+		},
+		"Culture & Art": {
+			"prompt": "",
+			"list": {
+				"Values & Ethics": {
+					"prompt": "What does your species consider fundamentally important? Family, Freedom, Peace, Education, etc?\nWhat does your species consider Right or Wrong?\nDo your species have Charity?\nWhat is their opinion on Killing/Accidental Death?\nAre acts such as Lying, Cheating, Fraud deemed acceptable?\nIs there slavery?"
+				},
+				"Language": {
+					"prompt": "How does your species communicate?\nWhat is your species' language called?\nHow is this language used? Is it verbal, written, or gesture-based?\nAre there multiple languages throughout your world?"
+				},
+				"Writing": {
+					"prompt": "Can your species write? If so, how do they write? Do they use ink, chalk, clay tablets, etc?\nDo they use an alphabet?\nHow are words and sentences constructed?\nDo they use punctuation?"
+				},
+				"Art": {
+					"prompt": "Is your species capable of artistic expression?\nDo they prefer one type of art form more than others? Music, Painting, Sculpture, Dance, Theatre, etc?"
+				},
+				"Recreation": {
+					"prompt": "Is recreational time valued?\nHow is leisure time spent?\nWich games and sports are practiced?"
+				},
+				"Education": {
+					"prompt": "Does your species have an organised education system? If so, at what age does your species enter this system?\nDoes this system bestow any form of status? Is education considered a privilege, a right, or something to avoid?"
+				}
+			}
+		},
+		"Society": {
+			"prompt": "",
+			"list": {
+				"Class System": {
+					"prompt": "Is there a class system in your society? If so, what style is this system?\nIs there a form of discrimination or segregation? If so, how is it justified?\nDoes this system allow for class movement? Can the lower class become upper class?"
+				},
+				"Nobility": {
+					"prompt": "Does royalty exist?\nAre there societal elites? If so, what constitutes an elite?\nDo the nobles interact with other members of society? Is there a strict separation?"
+				},
+				"Beauty Standards": {
+					"prompt": "What does your species regard as beautiful?\nDoes your species use cosmetics?\nDoes society have any expectations in regards to beauty/appearance? Are these expectations related to Age, Gender, Class, etc?\nDoes clothing and jewellery relate to beauty?"
+				},
+				"Relationships": {
+					"prompt": "How is sexual orientation defined?\nCan your species have friends? If so, how do they make friends? Who can be their friends?\nHow does your species acquire a mate?\nAre there any intricacies to courting?\nHow is marriage viewed? Does it exist? Is it expected?\nAre they free to match with one another or is matching made by an authority (for example family)?\nWhen do individuals become adults? Is there a rite of passage?"
+				},
+				"Gender Roles": {
+					"prompt": "Are there separate attitudes regarding gender?\nDo sons/daughters get married off?\nWho is regarded as the prime parent?\nAre there particular jobs/activities reserved for only one gender?\nDo extra benefits get granted to one particular gender?"
+				},
+				"Etiquette": {
+					"prompt": "Does your species have a particular attitude towards eating? Do servants eat last? Do they make a toast or pray before eating?\nDoes your species eat their meals in a specific order?\nAre there standard greetings and farewells?\nAre certain gestures considered rude?\nAre there common salutations? Sir, Madam, Master, etc?"
+				},
+				"Clothing and Apparel": {
+					"prompt": "What does your species commonly wear? Are there different items of clothing?\nDo different styles of clothing have specific meanings? Wedding dresses, Priest's vestments, etc?"
+				},
+				"Jewellery and Tattoos": {
+					"prompt": "Does your species wear jewellery? If so, where do they commonly wear them?\nDo tattoos/body paint have specific cultural significance?\nHow is the jewellery made? What is it made from? Does jewellery correlate with social class?"
+				},
+				"Cooking & Brewing": {
+					"prompt": "What types of culinary practises does your species have?\nDoes your species produce Alcohol? Is the Prohibition?\nWhat unique recipes does your species have?"
+				},
+				"Narcotics": {
+					"prompt": "Does your species have any form of drugs? Are these drugs a problem in their society?\nWhat are the effects? Are they recreational or harmful?\nIs there a social stigma attached to its use?\nAre drugs used as a combat aid? Do these drugs enhance any abilities?"
+				}
+			}
+		},
+		"Subspecies & Types": {
+			"prompt": "Are there subspecies? Which and how do they differ?"
+		}
+	}
+}

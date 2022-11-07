@@ -1,0 +1,130 @@
+{
+	"links": true,
+	"title": "Religion Name",
+	"type": "religion",
+	"categories": {
+		"cult": [ "Cult","Cults" ],
+		"coven": [ "Coven","Covens" ],
+		"order": [ "Order","Orders" ],
+		"religion": [ "Religion","Religions" ],
+		"sect": [ "Sect","Sects" ],
+		"temple": [ "Temple","Temples" ]
+	},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Motto": {
+			"label": "",
+			"preText": "<b>Motto: </b>",
+			"wide": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Capital": {},
+		"Headquarters": {},
+		"Region": {},
+		"Demonyms": {},
+		"Scripture": {},
+		"Official Languages": {},
+		"Writing Systems": {},
+		"Ethnic Groups": {},
+		"Origin": {},
+		"Founding": {},
+		"Founded By": {},
+		"Founding Event": {},
+		"Preceded By": {},
+		"Era": {},
+		"Dissolution": {},
+		"Dissolution Event": {},
+		"Succeeded By": {},
+		"Parent Organization": {},
+		"Ruled By": { "tag": "ruled_by" },
+		"Products/Services": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Religion general description. With other prominent/notable general details?"
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"History": {
+			"prompt": "What is the History of the Organization? Why was it formed? Is it growing? Any notorious dates or events?"
+		},
+		"Types and Branches": {
+			"prompt": "Does this Religion have different types? What are them? How are they different? Any moderate/extremist/...?"
+		},
+		"Views and Beliefs": {
+			"prompt": "Common beliefs? Are they widespread? Are there different interpretations or opinions?",
+			"list": {
+				"Afterlife, Heaven & Hell": {
+					"prompt": "Is there a belief in afterlife? Heaven? Hell?"
+				},
+				"Soul": {
+					"prompt": "Is there a belief in souls or alike? What happens to this soul upon death?"
+				},
+				"Superstitions": {
+					"prompt": "What unnatural force is feared? Believe in Bad Luck/Curses? How are they \"cured\"?"
+				},
+				"Genesis & Creation": {
+					"prompt": "What is the creation myth? Is there a belief of the world ending?"
+				}
+			}
+		},
+		"Practices and Traditions": {
+			"prompt": "What are some common practices? Are those for everyone? Every time or on occasion?",
+			"list": {
+				"Burial Rites": {
+					"prompt": "How is the handling of the dead? What rites are performed? Is there special treatment for some individuals?"
+				},
+				"Symbols": {
+					"prompt": "Any common symbols? What are they and what do they mean/represent?"
+				}
+			}
+		},
+		"Texts": {
+			"prompt": "Are there any followed texts? What are they? Are beliefs take from them? Are they followed to the line?"
+		},
+		"Structure": {
+			"prompt": "What is the Structure of the Organization? How is it divided? Who has power?",
+			"list": {
+				"Hierarchy": {
+					"prompt": "What is the hierarchy for this religion? Are there different levels and different sizes of places of worship? Is there a centralized individual/group/organization?"
+				},
+				"Divisions": {
+					"prompt": "Any Sects/Denominations/Churches"
+				},
+				"Schools": {
+					"prompt": "Any different schools of though?"
+				}
+			}
+		},
+		"Spread and Demographics": {
+			"prompt": "How many followers? Geographic spread. Is it growing in popularity?"
+		},
+		"Cultural Influence": {
+			"prompt": "How does this religion influence culture? How does it shape art?"
+		},
+		"Criticism and Persecution": {
+			"prompt": "What opposition has this religion gathered?",
+			"list": {
+				"Criticism": {
+					"prompt": "What are some criticism to this religion or its beliefs?"
+				},
+				"Persecution": {
+					"prompt": "Is there persecution of this religion?"
+				}
+			}
+		}
+	}
+}

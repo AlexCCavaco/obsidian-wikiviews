@@ -1,0 +1,81 @@
+{
+	"links": true,
+	"title": "Tile/Role Name",
+	"type": "title",
+	"categories": {},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Style": {},
+		"Status": {},
+		"Member Of": {},
+		"Residence": {},
+		"Headquarters": {},
+		"Related Locations": {},
+		"Related Organizations": {},
+		"Seat": {},
+		"Nominator": {},
+		"Appointed By": {},
+		"Reports To": {},
+		"Term Length": {},
+		"Formation": {},
+		"Dissolution": {},
+		"Salary": {},
+		"First Holder": {},
+		"Last Holder": {},
+		"Current Holder": {},
+		"Previous Holder": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "General outline of the role/title."
+		},
+		"History": {
+			"prompt": "What is the history of this title?",
+			"list": {
+				"Creation": {
+					"prompt": "How was this title created? Who held it first?"
+				},
+				"Notable Holders": {
+					"prompt": "Any notable holders? What did they do? Were they notable for any event or for being bad/good?"
+				}
+			}
+		},
+		"Requirements": {
+			"prompt": "What are the requirements to be able to hold or run for this role? Are there restrictions? Based on what? (gender, status, culture, religion, ...)"
+		},
+		"Appointment and Succession": {
+			"prompt": "Who appoints this role? How does succession work?"
+		},
+		"Term Limit": {
+			"prompt": "Is there a term limit? Has it changed before? What happens when the term ends?"
+		},
+		"Duties and Responsibilities": {
+			"prompt": "What are the duties and responsibilities of this role?"
+		},
+		"Removal or Dismissal": {
+			"prompt": "How can a holder be removed or dismissed? Are there any precedents?"
+		},
+		"Status and Authority": {
+			"prompt": "What is the basis of the authority of this role? Who and what does it rule? Are there titles/roles beneath them? Does the role bring other titles and privileges?"
+		},
+		"Cultural Significance": {
+			"prompt": "How does this role influence culture and society? How is it viewed?"
+		},
+		"Criticism": {
+			"prompt": "Is there criticism against this post? By whom and on what basis?"
+		}
+	}
+}

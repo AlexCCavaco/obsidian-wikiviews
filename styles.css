@@ -1,8 +1,125 @@
-/*
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.wv-page .inline-title {
+	font-size: .9em;
+	opacity: .6;
+}
+.wv-page .inline-title:before {
+	content: '— ';
+}
 
-If your plugin does not need CSS, delete this file.
+.wv-title {
+	font-size: 1.4em;
+	border-bottom: 1px solid #fafafa11;
+	padding: 10px 0;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
 
-*/
+.wv-page h1 {
+	font-size: 1.25em;
+	border-bottom: 1px solid #fafafa11;
+	padding: 10px 0;
+	margin: 20px 0 5px;
+	font-weight: bold;
+}
+.wv-page h2 {
+	font-size: 1.10em;
+	padding: 10px 0;
+	margin: 20px 0 5px;
+	font-weight: bold;
+	opacity: .9;
+}
+.wv-page h3 {
+	font-size: 1em;
+	padding: 10px 0;
+	margin: 20px 0 5px;
+	font-weight: bold;
+	opacity: .85;
+}
+
+.wv-sidebar {
+	float: right;
+	clear: right;
+	width: 300px;
+	max-width: 40%;
+	margin: 0 0 5px 5px;
+	padding: 0;
+	background-color: transparent;
+}
+.wv-sidebar table.wv-table {
+	width: 100%;
+	max-width: 100%;
+	background: #00001111;
+	border: 0;
+	margin: 0 !important;
+	display: grid;
+	grid-template-columns: .8fr 1fr;
+}
+.wv-sidebar table.wv-table ul,
+.wv-sidebar table.wv-table ol {
+	margin: 0;
+	padding-left: 15px;
+}
+.wv-sidebar table.wv-table > tbody,
+.wv-sidebar table.wv-table > tbody > tr {
+	display: contents;
+}
+.wv-sidebar .wv-table .wv-row:last-child .wv-cell {
+	border-bottom: 1px solid #fafafa11;
+}
+.wv-sidebar .wv-table .wv-row .wv-cell {
+	border-top: 1px solid #fafafa11;
+}
+.wv-sidebar .wv-table .wv-row .wv-cell > .wv-elm:after {
+	content: ', ';
+}
+.wv-sidebar .wv-table .wv-row .wv-cell > .wv-elm:last-child:after {
+	content: '';
+}
+.wv-sidebar .wv-table .wv-row.wv-full .wv-cell {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: center;
+}
+.wv-sidebar .wv-table .wv-row.wv-ttl {
+	padding: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.wv-sidebar .wv-table .wv-row.wv-bold {
+	font-weight: bold;
+}
+.wv-sidebar .wv-table .wv-row .wv-cell:first-child {
+	border-left: 1px solid #fafafa11;
+}
+.wv-sidebar .wv-table .wv-row .wv-cell:last-child {
+	border-right: 1px solid #fafafa11;
+}
+.wv-sidebar .wv-table .wv-row.wv-row-joined .wv-cell {
+	border-top: 0px;
+}
+.wv-sidebar .wv-table .wv-cell:first-child,
+.wv-sidebar .wv-table .wv-cell {
+	padding: 5px 10px;
+}
+.wv-sidebar .wv-table .wv-cell {
+	border: 0;
+	line-height: unset;
+	font-size: .9em;
+}
+.wv-sidebar .wv-table .wv-row.wv-row-joined .wv-cell {
+	padding-top: 0px;
+}
+.wv-sidebar .wv-table .wv-cell > .wv-utext { display: block; opacity: .7; font-size: .9em; }
+.wv-sidebar .wv-table .wv-cell > .wv-text {  }
+.wv-sidebar .wv-table .wv-cell > .wv-icon {  }
+.wv-sidebar .wv-table .wv-cell > .wv-perc {  }
+.wv-sidebar .wv-table .wv-cell > .wv-date {  }
+.wv-sidebar .wv-table .wv-cell > .wv-value {  }
+.wv-sidebar .wv-table .wv-cell > .wv-name {  }
+.wv-sidebar .wv-table .wv-cell > .wv-small { font-size: .9em; font-weight: normal; }
+.wv-sidebar .wv-table .wv-cell > .wv-label { font-weight: bold; }
+.wv-sidebar .wv-table .wv-cell > .wv-info { opacity: .5; font-size: .9em; }
+.wv-sidebar .wv-table .wv-head {
+	font-weight: bold;
+}

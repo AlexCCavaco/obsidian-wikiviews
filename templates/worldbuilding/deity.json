@@ -1,0 +1,71 @@
+{
+	"links": true,
+	"title": "Deity Name",
+	"type": "deity",
+	"categories": {},
+	"data": {
+		"Full Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Date of Birth": {},
+		"Place of Birth": {},
+		"Date of Obit": {},
+		"Place of Obit": {},
+		"Cause of Obit": {},
+		"Retired": {},
+		"Occupation": {},
+		"Known For": {},
+		"Alma Matter": {},
+		"Education": {},
+		"Affiliations": {},
+		"Height": {},
+		"Spouse": {},
+		"Children": {},
+		"Parents": {},
+		"Relatives": {},
+		"Titles": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "General Details about this person."
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"Personal Life": {
+			"prompt": "What is/was their personal life? Birth/Family/Growing Up/Adolescence/Death/Love Life/Education/Religion/..."
+		},
+		"Teachings": {
+			"prompt": "What teachings have they brought forward? Are they known for them?"
+		},
+		"Historical Views": {
+			"prompt": "What are the historical views regarding this deity? Are there multiple perspectives? Portraits? Appearances?"
+		},
+		"Symbols": {
+			"prompt": "Are there any associated symbols or relics with this deity?"
+		},
+		"Legacy": {
+			"prompt": "What legacy have they left? Myths? Miracles?"
+		},
+		"Mentions": {
+			"prompt": "Are they mentioned in scriptures/art/...?"
+		},
+		"Veneration": {
+			"prompt": "Are they venerated? In what form and by who?"
+		},
+		"Controversies": {
+			"prompt": "Are there any controversies related to this individual? Who created them? Are they founded on something? Are they a controversial figure? Rivalries?"
+		}
+	}
+}

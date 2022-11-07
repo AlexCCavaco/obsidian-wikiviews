@@ -1,85 +1,81 @@
-import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import { App, Editor, MarkdownView, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import { readFileSync } from 'fs';
+import { InsertTemplate } from "./modal";
+import { CreateBody, CreateSidebar, ConvertSidebarEditor, SetupMetaData } from "./templater";
+import { join as pathJoin } from 'path';
 
-// Remember to rename these classes and interfaces!
-
-interface MyPluginSettings {
-	mySetting: string;
+interface PluginSettings {
+	templatePath: string;
 }
 
-const DEFAULT_SETTINGS: MyPluginSettings = {
-	mySetting: 'default'
+const DEFAULT_SETTINGS: PluginSettings = {
+	templatePath: ''
 }
 
-export default class MyPlugin extends Plugin {
-	settings: MyPluginSettings;
+export default class WikiViews extends Plugin {
+	settings: PluginSettings;
+	templates: Map<string,{data:object,body:object,images:object,options:{defaultTitle:string,showLinks:boolean,navBoxes:Array<object>,categories:{[key in string]:string|Array<string>}}}>;
 
 	async onload() {
 		await this.loadSettings();
+		this.templates = new Map();
+		this.templates.set("wb/Nation",require("./templates/worldbuilding/nation.json"));
+		this.templates.set("wb/Culture",require("./templates/worldbuilding/culture.json"));
+		this.templates.set("wb/Organization",require("./templates/worldbuilding/organization.json"));
+		this.templates.set("wb/Title",require("./templates/worldbuilding/title.json"));
+		this.templates.set("wb/Religion",require("./templates/worldbuilding/religion.json"));
+		this.templates.set("wb/Deity",require("./templates/worldbuilding/deity.json"));
+		this.templates.set("wb/Person",require("./templates/worldbuilding/person.json"));
+		this.templates.set("wb/Language",require("./templates/worldbuilding/language.json"));
+		this.templates.set("wb/Geography",require("./templates/worldbuilding/geography.json"));
+		this.templates.set("wb/Settlement",require("./templates/worldbuilding/settlement.json"));
+		this.templates.set("wb/Building",require("./templates/worldbuilding/building.json"));
+		this.templates.set("wb/Sapient",require("./templates/worldbuilding/sapient.json"));
+		this.templates.set("wb/Species",require("./templates/worldbuilding/species.json"));
+		this.templates.set("wb/Item",require("./templates/worldbuilding/item.json"));
+		this.templates.set("wb/Document",require("./templates/worldbuilding/document.json"));
+		this.templates.set("wb/Event",require("./templates/worldbuilding/event.json"));
 
-		// This creates an icon in the left ribbon.
-		const ribbonIconEl = this.addRibbonIcon('dice', 'Sample Plugin', (evt: MouseEvent) => {
-			// Called when the user clicks the icon.
-			new Notice('This is a notice!');
-		});
-		// Perform additional things with the ribbon
-		ribbonIconEl.addClass('my-plugin-ribbon-class');
-
-		// This adds a status bar item to the bottom of the app. Does not work on mobile apps.
-		const statusBarItemEl = this.addStatusBarItem();
-		statusBarItemEl.setText('Status Bar Text');
-
-		// This adds a simple command that can be triggered anywhere
 		this.addCommand({
-			id: 'open-sample-modal-simple',
-			name: 'Open sample modal (simple)',
-			callback: () => {
-				new SampleModal(this.app).open();
-			}
-		});
-		// This adds an editor command that can perform some operation on the current editor instance
-		this.addCommand({
-			id: 'sample-editor-command',
-			name: 'Sample editor command',
-			editorCallback: (editor: Editor, view: MarkdownView) => {
-				console.log(editor.getSelection());
-				editor.replaceSelection('Sample Editor Command');
-			}
-		});
-		// This adds a complex command that can check whether the current state of the app allows execution of the command
-		this.addCommand({
-			id: 'open-sample-modal-complex',
-			name: 'Open sample modal (complex)',
-			checkCallback: (checking: boolean) => {
-				// Conditions to check
-				const markdownView = this.app.workspace.getActiveViewOfType(MarkdownView);
-				if (markdownView) {
-					// If checking is true, we're simply "checking" if the command can be run.
-					// If checking is false, then we want to actually perform the operation.
-					if (!checking) {
-						new SampleModal(this.app).open();
-					}
+			id: "open-template-settings",
+			name: "Insert Template",
+			editorCallback: (editor: Editor) => {
 
-					// This command will only show up in Command Palette when the check function returns true
-					return true;
-				}
-			}
+				const onSubmit = ( templatePathOrKey: string, category: string|null=null) => {
+					let template = this.getTemplate(templatePathOrKey);
+					if(!template) return console.error('Template Not Found => '+templatePathOrKey);
+					let iData = "";
+					iData+= "<div class='wv-title'>"+(template.options.defaultTitle??"Title")+"</div>";
+					iData+= '\n\n';
+					iData+= CreateSidebar(templatePathOrKey,template.data??{},template.options??{});
+					iData+= '\n';
+					iData+= CreateBody(template.body??{},template.options??{});
+					editor.setCursor(-1);
+					editor.replaceSelection(iData);
+				};
+
+				new InsertTemplate(this.app, this, this.templates, this.settings.templatePath, onSubmit).open();
+			},
 		});
 
 		// This adds a settings tab so the user can configure various aspects of the plugin
-		this.addSettingTab(new SampleSettingTab(this.app, this));
+		this.addSettingTab(new SettingsTab(this.app, this));
 
-		// If the plugin hooks up any global DOM events (on parts of the app that doesn't belong to this plugin)
-		// Using this function will automatically remove the event listener when this plugin is disabled.
-		this.registerDomEvent(document, 'click', (evt: MouseEvent) => {
-			console.log('click', evt);
+		this.registerMarkdownPostProcessor((element,context)=>{
+			SetupMetaData(this.app);
+			let callout = element.querySelector("[data-callout='wv-sidebar']");
+			if(!callout||callout.classList.contains('wv-sidebar')) return;
+			callout.classList.add('wv-sidebar');
+			let templateName = element.getElementsByClassName('callout-title-inner')[0];
+			if(!templateName||!templateName.textContent) return;
+			let template = this.getTemplate(templateName.textContent);
+			if(!template) return console.error('Template Not Found => '+templateName.textContent);
+			ConvertSidebarEditor(callout,template.data,template.options);
 		});
-
-		// When registering intervals, this function will automatically clear the interval when the plugin is disabled.
-		this.registerInterval(window.setInterval(() => console.log('setInterval'), 5 * 60 * 1000));
 	}
 
 	onunload() {
-
+		//
 	}
 
 	async loadSettings() {
@@ -89,28 +85,18 @@ export default class MyPlugin extends Plugin {
 	async saveSettings() {
 		await this.saveData(this.settings);
 	}
-}
 
-class SampleModal extends Modal {
-	constructor(app: App) {
-		super(app);
-	}
-
-	onOpen() {
-		const {contentEl} = this;
-		contentEl.setText('Woah!');
-	}
-
-	onClose() {
-		const {contentEl} = this;
-		contentEl.empty();
+	getTemplate(templatePathOrKey:string){
+		let template = this.templates.get(templatePathOrKey);
+		if(!template&&this.settings.templatePath!=='') template = JSON.parse(readFileSync(pathJoin(__dirname, this.settings.templatePath, templatePathOrKey),{encoding:'utf8', flag:'r'}));
+		return template;
 	}
 }
 
-class SampleSettingTab extends PluginSettingTab {
-	plugin: MyPlugin;
+class SettingsTab extends PluginSettingTab {
+	plugin: WikiViews;
 
-	constructor(app: App, plugin: MyPlugin) {
+	constructor(app: App, plugin: WikiViews) {
 		super(app, plugin);
 		this.plugin = plugin;
 	}
@@ -120,17 +106,16 @@ class SampleSettingTab extends PluginSettingTab {
 
 		containerEl.empty();
 
-		containerEl.createEl('h2', {text: 'Settings for my awesome plugin.'});
+		containerEl.createEl('h2', { text: 'WikiViews Settings'} );
 
 		new Setting(containerEl)
-			.setName('Setting #1')
-			.setDesc('It\'s a secret')
-			.addText(text => text
-				.setPlaceholder('Enter your secret')
-				.setValue(this.plugin.settings.mySetting)
-				.onChange(async (value) => {
-					console.log('Secret: ' + value);
-					this.plugin.settings.mySetting = value;
+			.setName('Custom Template Folder')
+			.setDesc('Folder where Custom Templates for WikiViews are located')
+			.addText(text=>text
+				.setPlaceholder('/')
+				.setValue(this.plugin.settings.templatePath)
+				.onChange(async (value)=>{
+					this.plugin.settings.templatePath = value;
 					await this.plugin.saveSettings();
 				}));
 	}

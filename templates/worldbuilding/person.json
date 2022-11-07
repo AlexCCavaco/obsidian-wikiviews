@@ -1,0 +1,64 @@
+{
+	"links": true,
+	"title": "Person Name",
+	"type": "person",
+	"categories": {},
+	"data": {
+		"Full Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Residence": {},
+		"Date of Birth": {},
+		"Place of Birth": {},
+		"Date of Obit": {},
+		"Place of Obit": {},
+		"Cause of Obit": {},
+		"Retired": {},
+		"Occupation": {},
+		"Known For": {},
+		"Alma Matter": {},
+		"Education": {},
+		"Affiliations": {},
+		"Height": {},
+		"Spouse": {},
+		"Children": {},
+		"Parents": {},
+		"Relatives": {},
+		"Awards": {},
+		"Titles": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "General Details about this person."
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"Personal Life": {
+			"prompt": "What is/was their personal life? Birth/Family/Growing Up/Adolescence/Death/Love Life/Education/Religion/..."
+		},
+		"Career": {
+			"prompt": "What have they made their career and what have they accomplished with it?"
+		},
+		"Contributions": {
+			"prompt": "What (if any) media was produced by the individual? Films/Music/Books/Writings/..."
+		},
+		"Distinctions and Awards": {
+			"prompt": "Any distinction, record or awards given to this individual? Why and for what were they given? Any nominations/honours?"
+		},
+		"Controversies": {
+			"prompt": "Are there any controversies related to this individual? Who created them? Are they founded on something? Are they a controversial figure? Rivalries?"
+		}
+	}
+}

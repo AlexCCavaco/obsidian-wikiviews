@@ -1,0 +1,181 @@
+{
+	"links": true,
+	"title": "Geographic Location Name",
+	"type": "geography",
+	"categories": {
+		"archipelago": [ "Archipelago","Archipelagos" ],
+		"asteroid": [ "Asteroid","Asteroids" ],
+		"atoll": [ "Atoll","Atolls" ],
+		"bay": [ "Bay","Bays" ],
+		"canyon": [ "Canyon","Canyons" ],
+		"cape": [ "Cape","Capes" ],
+		"cabe": [ "Cabe","Cabes" ],
+		"chasm": [ "Chasm","Chasms" ],
+		"cliff": [ "Cliff","Cliffs" ],
+		"coast": [ "Coast","Coasts" ],
+		"continent": [ "Continent","Continents" ],
+		"coral-reef": [ "Coral Reef","Coral Reefs" ],
+		"crater": [ "Crater","Craters" ],
+		"desert": [ "Desert","Deserts" ],
+		"estuary": [ "Estuary","Estuaries" ],
+		"field": [ "Field","Fields" ],
+		"fjord": [ "Fjord","Fjords" ],
+		"forest": [ "Forest","Forests" ],
+		"galaxy": [ "Galaxy","Galaxies" ],
+		"glacier": [ "Glacier","Glaciers" ],
+		"gulf": [ "Gulf","Gulfs" ],
+		"highlands": [ "Highlands","Highlands" ],
+		"island": [ "Island","Islands" ],
+		"sea": [ "Sea","Seas" ],
+		"jungle": [ "Jungle","Jungles" ],
+		"lake": [ "Lake","Lakes" ],
+		"river": [ "River","Rivers" ],
+		"mountain": [ "Mountain","Mountains" ],
+		"hill": [ "Hill","Hills" ],
+		"range": [ "Range","Ranges" ],
+		"oasis": [ "Oasis","Oasis" ],
+		"ocean": [ "Ocean","Oceans" ],
+		"peninsula": [ "Peninsula","Peninsulas" ],
+		"plain": [ "Plain","Plains" ],
+		"nebula": [ "Nebula","Nebulae" ],
+		"planet": [ "Planet","Planets" ],
+		"star": [ "Star","Stars" ],
+		"plateau": [ "Plateau","Plateaus" ],
+		"pond": [ "Pond","Ponds" ],
+		"rapids": [ "Rapids","Rapids" ],
+		"region": [ "Region","Regions" ],
+		"savannah": [ "Savannah","Savannas" ],
+		"solar-system": [ "Solar System","Solar Systems" ],
+		"strait": [ "Strait","Straits" ],
+		"subcontinent": [ "Subcontinent","Subcontinents" ],
+		"taiga": [ "Taiga","Taigas" ],
+		"tundra": [ "Tundra","Tundras" ],
+		"universe": [ "Universe","Universes" ],
+		"vale": [ "Vale","Vales" ],
+		"valley": [ "Valley","Valleys" ],
+		"volcano": [ "Volcano","Volcanoes" ],
+		"wasteland": [ "Wasteland","Wastelands" ],
+		"wetland": [ "Wetland","Wetlands" ],
+		"woods": [ "Woods","Woods" ],
+		"swamp": [ "Swamp","Swamps" ],
+		"waterfall": [ "Waterfall","Waterfalls" ]
+	},
+	"data": {
+		"Official Name": {
+			"label": "",
+			"wide": true,
+			"title": true
+		},
+		"Native Name": {
+			"label": "",
+			"wide": true,
+			"joined": true
+		},
+		"Alias": {
+			"group": true
+		},
+		"Parent Location": {},
+		"Region": {},
+		"Demonyms": {},
+		"Discovered": {},
+		"Discovered Event": {},
+		"Era": {},
+		"Ruled By": { "tag": "ruled_by" },
+		"Parent Organization": { "tag": "parent_org" },
+		"Notable Dates": {},
+		"Ethnic Groups": {},
+		"Population": { "tag": "population" },
+		"Timezone": {},
+		"Area": {},
+		"Other Stats": {}
+	},
+	"body": {
+		"_main": {
+			"prompt": "Geographic Location general description. With other prominent/notable general details?"
+		},
+		"Etymology": {
+			"prompt": "Name Origin and relevance"
+		},
+		"Geography": {
+			"prompt": "What is the overall geography? Any notable features?",
+			"list": {
+				"Climate": {
+					"prompt": "What does the climate look like? Rain/Temperature/Snow/Tides/Wind/Radiation/... Is it changing? Are there recurrent climate events (tornadoes,volcanoes,floods,...)? Are there different climate regions?"
+				},
+				"Biodiversity": {
+					"prompt": "How diversity is the fauna and flora? Are they under treat? Were any drove to extinction? Relation with agriculture/industry/infrastructure? Are habitats preserved? Is there education? Is there zoos/botanical parks/forests/sanctuaries/national parks/...?"
+				},
+				"Topography": {
+					"prompt": "Terrain/Mountains/Ranges/Deserts/Seismic/Volcanoes/..."
+				},
+				"Hydrography": {
+					"prompt": "Rivers/Lakes/Oceans/Seas/Islands/..."
+				},
+				"Natural Resources": {
+					"prompt": "What resources are present within? Is there scarcity or surplus?"
+				}
+			}
+		},
+		"History": {
+			"prompt": "What are some notable historical events? Formation/Discovery/Exploitation/Colonization/..."
+		},
+		"People": {
+			"prompt": "Is there people? Have they conquered the environment or are they working with it?",
+			"list": {
+				"Demographics": {
+					"prompt": "What are the demographics of the area? How big are the settlements? Who lives or uses the area? Are there claimants?"
+				},
+				"Religion": {
+					"prompt": "Are there religious locations? Importance/Settlements/..."
+				},
+				"Languages": {
+					"prompt": "Is there a common language? Are there various? Are they unique?"
+				},
+				"Protected Areas": {
+					"prompt": "Are there protected areas? Are they under threat? Is there conservation?"
+				},
+				"Tourism": {
+					"prompt": "Is there tourism? How prolific is it? What areas/locations are often visited? Is there religious/educational/eco/scientific/creative/seasonal tourism?"
+				},
+				"Agriculture and Industry": {
+					"prompt": "Is the area used for farms and or industry? What is produced? Is it sustainable? Is it harming the area?"
+				},
+				"Notorious Locations": {
+					"prompt": "Are there any notorious locations? Religious/Political/Resources/..."
+				}
+			}
+		},
+		"Art and Culture": {
+			"prompt": "Cultural Influences, Cultural Divides, Historical Relation and Cultural Outline",
+			"list": {
+				"Arts and Literature": {
+					"prompt": "How is art reflected in society? Are there patrons? Are there any movements? Relevance in education? Skill and craft? What are its influences? Is art accompanied in other facets of society?"
+				},
+				"Philosophy": {
+					"prompt": "Importance of philosophy? Is it practiced? Are there specific philosopher or those that practice have other occupations? Are there patrons? Which philosophical types are embraced? Underground movements?"
+				},
+				"Music and Dance": {
+					"prompt": "Influences? Common instruments, genres and dance styles? Any regional/national symbols? Roles of pitch/melody/harmony/rhythm/texture/timbre/expression/form? In Education? Reflection of society (like music created from dark times or from a happy outlook)?"
+				},
+				"Architecture": {
+					"prompt": "What does the tradition architecture look like? Is it widespread or with regional differences? What are its influences? Historical? Neighbors? Does architecture extend to public facilities/parks/landscape/interior/disaster prevention/water integration?"
+				},
+				"Ethics": {
+					"prompt": "Is there a prevailing concept of right and wrong behaviour? Are there ethics in medicine/war/politics/animal/tech/science/business?"
+				},
+				"Food and Cuisine": {
+					"prompt": "What are some typical foods? What are some common ingredients? Is food shaped by culture/history/neighbors? Is it shaped by current or historical wars/famines/poverty? Condiments/Spice/Meals/Meal Structure/Drinks/Alcohol/Narcotics/Sweets/Salt/Nutrition/Obesity?"
+				},
+				"Media": {
+					"prompt": "Is media access widespread? In what forms? Do people hear of nacional news? And world news? Is media controlled/censored/altered/propagandized/blocked? What is the level of trust in media?"
+				},
+				"Sports": {
+					"prompt": "What sports are practiced? How widespread are these? Any interconnection with other places? Are these socially divided? Does everyone play? Do children have rough versions of these (like cloth balls)?"
+				},
+				"Holidays and Festivals": {
+					"prompt": "Often celebrated holidays and festival? Cultural importance of these? Seasonal? Religious? Historical? Reenactments? Arts?"
+				}
+			}
+		}
+	}
+}
