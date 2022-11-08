@@ -65,7 +65,6 @@ export class InsertTemplate extends Modal {
 		);
 
 		new Setting(contentEl).setName("Select Category").addDropdown((dropdown)=>{
-				console.log(dropdown);
 				catSel = dropdown;
 				this.category = dropdown.getValue()??null;
 				dropdown.onChange((value)=>{ this.category = value; });
